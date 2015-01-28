@@ -1,0 +1,78 @@
+/*
+Theme Name: Riiskit
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+
+html .mceContentBody {
+	font-size: 100%;
+	/*max-width: 474px;*/
+}
+
+body {
+	vertical-align: baseline;
+	line-height: 1.47;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 16px;
+	color: #444;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 36px 0 12px;
+	color: #000;
+}
+
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+
+
+
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a:hover { color: #3496ED; text-decoration: none; }
+a:visited { color: #4122a6; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+
+
+
+
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+
+
+img {
+	height: auto;
+	max-width: 474px;
+	vertical-align: middle;
+}

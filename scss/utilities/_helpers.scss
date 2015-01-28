@@ -1,0 +1,197 @@
+
+/***** Start: layout *****/
+
+
+%container, .rk-container {
+	position: relative;
+	margin-left: auto; margin-right: auto;
+
+	&:before, &:after { clear: both; content: " "; display: table; }
+}
+
+%container-main {
+	@extend %container;
+	width: $container-width;
+	max-width: $container-max-width;
+}
+
+
+%box-float, .rk-box-float {
+	position: relative;
+	float: left;
+}
+
+%box-ib, .rk-box-ib {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+%cf:before, .clearfix:before,
+%cf:after, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+%cf:after, .clearfix:after {
+	clear: both;
+}
+
+
+/***** Start: elements *****/
+
+
+%nav, .rk-nav {
+	margin-left: 0; list-style: none;
+
+	li, li > a { display: inline-block; }
+	li > a { text-decoration: none; }
+}
+
+
+%button, .rk-button {
+	border: 0;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:active {
+		outline: none;
+	}
+}
+
+
+/***** Start: visibility *****/
+
+
+%hidden, %hide,
+.hidden, .hide {
+	display: none !important;
+	visibility: hidden;
+}
+
+%visuallyhidden, %screenreader,
+.visuallyhidden, .screenreader, .screen-reader-text {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px; height: 1px;
+	margin: -1px; padding: 0;
+	overflow: hidden;
+	border: 0;
+
+	.focusable:active, .focusable:focus {
+		position: static;
+		clip: auto;
+		width: auto; height: auto;
+		margin: 0;
+		overflow: visible;
+	}
+}
+
+%invisible, .invisible {
+	visibility: hidden;
+}
+
+
+%collapsed, .collapsed {
+	visibility: collapse;
+	height: 0; line-height: 0;
+	margin: 0; padding: 0;
+}
+
+
+%fade-in, .fade-in { height: auto; opacity: 1; }
+%fade-out, .fade-out { height: 0; opacity: 0; }
+
+
+.block, .show {
+	display: block !important;
+}
+.inline-block {
+	display: inline-block !important;
+}
+
+
+/***** Start: positioning *****/
+
+
+%center, .center {
+	display: block;
+	margin-left: auto; margin-right: auto;
+}
+
+/* IE 8+ */
+%center-abs, .center-abs {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto;
+}
+
+/* IE 8+ */
+%center-abs-h, .center-abs-h {
+	position: absolute; left: 0; right: 0;
+	margin-left: auto; margin-right: auto;
+}
+
+/* IE 8+ */
+%center-abs-h, .center-abs-h {
+	position: absolute; top: 0; bottom: 0;
+	margin-top: auto; margin-bottom: auto;
+}
+
+/* IE 9+ */
+%center-trans, .center-trans {
+	position: absolute; top: 50%; left: 50%;
+	@include transform( translate(-50%, -50%) );
+}
+
+
+/***** Start: modifying *****/
+
+
+%ir, .ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 150%;
+	}
+}
+
+
+%rounded-img, .rounded-img {
+	border-radius: 50%;
+	background-clip: padding-box;
+}
+
+
+%font-smoothing, .font-smoothing {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+
+/***** Start: misc *****/
+
+
+// Fluid container (ideal for img, embed object & iframe )
+%fluid, .fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.fluid-google-maps {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+	iframe {
+		position: absolute; top: 0; left: 0;
+		width: 100%; height: 100%;
+		border: 0;
+	}
+}

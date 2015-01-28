@@ -1,0 +1,171 @@
+/*!
+Theme Name: Riiskit
+Theme URI: https://github.com/Chrisriis/Riiskit
+Author: Christoffer Riis
+Author URI: no.linkedin.com/in/christofferiis
+Description: A developer theme; based on Twenty Fifteen, HTML5 boilerplate and SMACSS.
+Version: 1.0.0
+Text Domain: riiskit
+Domain Path: /languages/
+*/
+
+
+/*------------------------------------*\
+    #BROWSE HAPPY PROMT
+\*------------------------------------*/
+
+
+.browsehappy {
+	padding: 10px;
+    text-align: center;
+    font-size: 1em; font-weight: 700;
+    background: #000;
+
+	a {
+		text-decoration: none; color: #a4baee;
+
+		&:hover { text-decoration: underline; }
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+
+/*header*/.site-header {
+	background-color: #ccc;
+}
+
+	.site-header__inner {
+		@extend %container-main;
+		height: $header-height; line-height: $header-height;
+	}
+	@include bp(mobile-big) {
+		.site-header__inner { width: 100% !important; }
+	}
+
+		/*a*/.logo {
+			display: block;
+			float: left;
+			margin-right: 10px;
+		}
+
+
+
+
+
+/*------------------------------------*\
+    #PRIMARY MENU
+\*------------------------------------*/
+
+
+/*nav*/.site-header__nav {
+	float: right;
+	text-align: right;
+
+	li {
+		a {
+			margin-left: 40px;
+			text-decoration: none;
+			color: #000;
+
+			&:hover { text-decoration: underline; }
+		}
+	}
+
+	/*li*/.current_page_item,
+	/*li*/.current-menu-item {
+		a {
+			text-decoration: underline;
+			font-weight: bold;
+		}
+	}
+}
+
+/*ul*/.menu-primary {
+	@extend %nav;
+	float: right;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #MAIN CONTENT
+\*------------------------------------*/
+
+
+.site-main {
+	@extend %container-main;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SUB CONTENT
+\*------------------------------------*/
+
+
+.post { margin-top: 48px; }
+
+	.post .entry__title, .page__title {
+		font-weight: lighter;
+
+		a { @extend %stripped-link; }
+	}
+
+
+	.entry__content,
+	.entry__summary,
+	.page__content {
+		word-wrap: break-word;
+	}
+
+
+
+
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+
+/*footer*/.site-footer { background-color: #E4E4E4; }
+
+	.site-footer__inner {
+		@extend %container-main;
+		margin-top: 48px; padding: 40px 0;
+	}
+
+		.copyright{ float: left; }
+
+		.creator{ float: right; text-align: right; }
+
+
+
+
+
+/* ===============IMAGES=============== */
+
+
+img.alignleft { margin-right: 25px; }
+img.alignright { margin-left: 25px; }
+
+
+/* Gallery */
+.gallery {
+	overflow: hidden;
+}
+
+	.gallery-item {
+		@extend %box-float;
+		margin: 2px;
+	}

@@ -1,0 +1,10 @@
+
+@function color($color) {
+	@if map-has-key($colors, $color) {
+		$value: map-get($colors, $color);
+
+		@return $value;
+	}
+
+	@warn "The parameter must be a map key or a valid color value";
+}

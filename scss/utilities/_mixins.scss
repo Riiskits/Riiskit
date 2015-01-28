@@ -1,0 +1,26 @@
+
+@mixin hyphens($value) {
+	-webkit-hyphens: $value;
+	-moz-hyphens:    $value;
+	-ms-hyphens:     $value;
+	hyphens:         $value;
+}
+
+
+@mixin font-size($sizeValue: 14) {
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue / 10) + rem;
+}
+
+
+@mixin bp($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		$value: map-get($breakpoints, $breakpoint);
+
+		@media screen and (max-width: $value){
+			@content;
+		}
+	}
+
+	@warn "Unknown '#{$breakpoint}' in $breakpoints";
+}
