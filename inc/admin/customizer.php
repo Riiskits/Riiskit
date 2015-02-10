@@ -10,7 +10,6 @@
  */
 
 function riiskit_theme_customizer( $wp_customize ) {
-    $wp_customize->remove_section( 'title_tagline' );
 	$wp_customize->remove_section( 'colors' );
 	$wp_customize->remove_section( 'background_image' );
 	$wp_customize->remove_section( 'nav' );
@@ -19,121 +18,28 @@ function riiskit_theme_customizer( $wp_customize ) {
 
 	// MOBILE
 	// Mobile sidr.js menu on/off
-	$wp_customize->add_section('mobile' , array(
+	$wp_customize->add_section('developer' , array(
 		'title' => __('Developer', 'riiskit'),
 		'priority'    => 2,
 		'description' => __( 'Options for the developer.', 'riiskit' ),
 	) );
 	// toggle/slideout selection
-	$wp_customize->add_setting('mobile_menu_type', array(
+	$wp_customize->add_setting('developer_menu_type', array(
 		'default' => 'toggle-menu',
 		'type' => 'option',
 		'capability' => 'activate_plugins',
 		'sanitize_callback', 'riiskit_sanitize_menu_type',
 	) );
-	$wp_customize->add_control('mobile_menu_type', array(
-		'label'      => __('Menu Type', 'riiskit'),
-		'section'    => 'mobile',
-		'settings'   => 'mobile_menu_type',
+	$wp_customize->add_control('developer_menu_type', array(
+		'label'      => __('Menutype', 'riiskit'),
+		'section'    => 'developer',
+		'settings'   => 'developer_menu_type',
 		'type' => 'select',
 		'choices' => array(
             'toggle-menu' => 'Toggle',
             'slideout-menu' => 'Slideout',
         ),
 	) );
-	// slideout position (left/right)
-	$wp_customize->add_setting('mobile_menu_pos', array(
-		'default' => 'slideout-right',
-		'type' => 'option',
-		'capability' => 'activate_plugins',
-		'sanitize_callback', 'riiskit_sanitize_menu_pos',
-	) );
-	$wp_customize->add_control('mobile_menu_pos', array(
-		'label'      => __('Slideout Placement', 'riiskit'),
-		'section'    => 'mobile',
-		'settings'   => 'mobile_menu_pos',
-		'type' => 'radio',
-		'choices' => array(
-			'slideout-right' => __( 'Right', 'riiskit' ),
-            'slideout-left' => __( 'Left', 'riiskit' ),
-        ),
-	) );
-
-
-	// FOOTER
-	$wp_customize->add_section( 'footer', array(
-		'title'       => __( 'Footer', 'riiskit' ),
-		'description' => __('Write some text that will show in your footer (e.g. copyright).', 'riiskit'),
-		'priority'    => 120,
-	) );
-	$wp_customize->add_setting( 'footer_text', array(
-		'type' => 'option',
-		'transport'   => 'postMessage',
-		'sanitize_callback' => 'riiskit_sanitize_html',
-	) );
-	$wp_customize->add_control( new Textarea_Custom_Control( $wp_customize, 'footer_text', array(
-		'label' => __( 'Footer text', 'riiskit' ),
-		'section' => 'footer',
-		'settings' => 'footer_text',
-	) ) );
-
-
-	// SOCIAL
-	$wp_customize->add_section( 'social', array(
-		'title'       => __( 'Social', 'riiskit' ),
-		'description' => __('Add links to your social profiles etc.', 'riiskit'),
-		'priority'    => 135,
-	) );
-	$social_links = array();
-    // Facebook
-	$social_links[] = array(
-        'slug'	=>'social_fb_link',
-        'label'   => __( 'Facebook link', 'riiskit' ),
-    );
-	// Twitter
-    $social_links[] = array(
-        'slug'	=>'social_tw_link',
-		'label'   => __( 'Twitter link', 'riiskit' ),
-    );
-	// Google Plus
-	$social_links[] = array(
-        'slug'	=>'social_gplus_link',
-        'label'   => __( 'Google+ link', 'riiskit' ),
-    );
-	// Instagram
-    $social_links[] = array(
-        'slug'	=>'social_insta_link',
-		'label'   => __( 'Instagram link', 'riiskit' ),
-    );
-	// YouTube
-	$social_links[] = array(
-        'slug'	=>'social_ytube_link',
-        'label'   => __( 'YouTube link', 'riiskit' ),
-    );
-	// Dribble
-    $social_links[] = array(
-        'slug'	=>'social_dribble_link',
-		'label'   => __( 'Dribble link', 'riiskit' ),
-    );
-	// Github
-    $social_links[] = array(
-        'slug'	=>'social_github_link',
-		'label'   => __( 'Github link', 'riiskit' ),
-    );
-    foreach( $social_links as $link ) {
-		// SETTINGS
-		$wp_customize->add_setting( $link['slug'], array(
-            'type' => 'option',
-			'sanitize_callback' => 'riiskit_sanitize_url',
-        ) );
-        // CONTROLS
-        $wp_customize->add_control( $link['slug'], array(
-			'label' => $link['label'],
-			'section' => 'social',
-			'settings' => $link['slug'],
-			'type' => 'text',
-		) );
-	}
 }
 add_action( 'customize_register', 'riiskit_theme_customizer' );
 
@@ -300,26 +206,6 @@ function riiskit_sanitize_menu_type( $input ) {
     $valid = array(
         'toggle-menu' => 'Toggle',
         'slideout-menu' => 'Slideout',
-    );
-
-    if ( array_key_exists( $input, $valid ) ) {
-        return $input;
-    } else {
-        return '';
-    }
-}
-/**
- * radio: menu position
- *
- * @since Riiskit 1.0.0
- *
- * @param array $input.
- * return array Valid options.
- */
-function riiskit_sanitize_menu_pos( $input ) {
-    $valid = array(
-        'slideout-left' => __( 'Left', 'riiskit' ),
-        'slideout-right' => __( 'Right', 'riiskit'),
     );
 
     if ( array_key_exists( $input, $valid ) ) {

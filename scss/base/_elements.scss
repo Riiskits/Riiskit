@@ -1,4 +1,11 @@
 
+@import "bourbon";
+@import "../utilities/index";
+
+
+
+
+
 *, *:before, *:after { @include box-sizing(border-box); }
 
 
@@ -29,6 +36,9 @@ a {
 	&:focus { outline: thin dotted; }
 	&:hover, a:active { outline: 0; }
 }
+
+
+img { border: 0; }
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,28 +95,25 @@ fieldset {
 }
 
 
-input {
-	display: block;
-
-	&:active, &:focus { outline: none; }
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"],
 input[type="search"],
 input[type="password"] {
-	width: 100%;
 	padding: 4px;
-	border: 1px solid #C9C9C9;
+	border: 0;
 	-webkit-appearance: none !important;
 	border-radius: 0 !important;
+	background-color: #ccc;
 }
 
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+button {
+	border: 0;
+	border-radius: 0 !important;
 	cursor: pointer;
 }
 
@@ -116,9 +123,10 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
 textarea {
 	resize: vertical;
-	width: 100%;
 	padding: 4px;
-	border-radius: 0; border: 1px solid #C9C9C9;
+	border: 0;
+	border-radius: 0;
+	background-color: #ccc;
 }
 
 

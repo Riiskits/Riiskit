@@ -1,55 +1,81 @@
 
+@import "bourbon";
+
+@import "variables";
+
+
 /***** Start: layout *****/
 
 
-%container, .rk-container {
+.rk-container {
 	position: relative;
 	margin-left: auto; margin-right: auto;
 
 	&:before, &:after { clear: both; content: " "; display: table; }
 }
 
-%container-main {
-	@extend %container;
+.rk-container--main {
 	width: $container-width;
 	max-width: $container-max-width;
 }
 
 
-%box-float, .rk-box-float {
+.box-float {
 	position: relative;
 	float: left;
 }
 
-%box-ib, .rk-box-ib {
+.box-ib {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 }
 
 
-%cf:before, .clearfix:before,
-%cf:after, .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
-%cf:after, .clearfix:after {
+.clearfix:after {
 	clear: both;
+}
+
+
+.full-width {
+	display: block;
+	float: none;
+	width: 100%; max-width: none;
+	margin-left: 0; margin-right: 0;
 }
 
 
 /***** Start: elements *****/
 
 
-%nav, .rk-nav {
+.rk-nav {
 	margin-left: 0; list-style: none;
 
-	li, li > a { display: inline-block; }
-	li > a { text-decoration: none; }
+	> li,
+	> li > a {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+	}
+}
+
+.rk-nav--stacked {
+	> li {
+		display: list-item;
+	}
+
+	> li > a {
+		display: block;
+	}
 }
 
 
-%button, .rk-button {
+.rk-button {
 	border: 0;
 	text-align: center;
 	text-decoration: none;
@@ -64,14 +90,14 @@
 /***** Start: visibility *****/
 
 
-%hidden, %hide,
 .hidden, .hide {
 	display: none !important;
 	visibility: hidden;
 }
 
-%visuallyhidden, %screenreader,
-.visuallyhidden, .screenreader, .screen-reader-text {
+.visuallyhidden,
+.screenreader,
+.screen-reader-text {
 	position: absolute;
 	clip: rect(0 0 0 0);
 	width: 1px; height: 1px;
@@ -88,20 +114,26 @@
 	}
 }
 
-%invisible, .invisible {
+.invisible {
 	visibility: hidden;
 }
 
 
-%collapsed, .collapsed {
+.collapsed {
 	visibility: collapse;
 	height: 0; line-height: 0;
 	margin: 0; padding: 0;
 }
 
 
-%fade-in, .fade-in { height: auto; opacity: 1; }
-%fade-out, .fade-out { height: 0; opacity: 0; }
+.fade-in {
+	height: auto;
+	opacity: 1;
+}
+.fade-out {
+	height: 0;
+	opacity: 0;
+}
 
 
 .block, .show {
@@ -115,31 +147,31 @@
 /***** Start: positioning *****/
 
 
-%center, .center {
+.center {
 	display: block;
 	margin-left: auto; margin-right: auto;
 }
 
 /* IE 8+ */
-%center-abs, .center-abs {
+.center-abs {
 	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
 	margin: auto;
 }
 
 /* IE 8+ */
-%center-abs-h, .center-abs-h {
+.center-abs-h {
 	position: absolute; left: 0; right: 0;
 	margin-left: auto; margin-right: auto;
 }
 
 /* IE 8+ */
-%center-abs-h, .center-abs-h {
+.center-abs-v {
 	position: absolute; top: 0; bottom: 0;
 	margin-top: auto; margin-bottom: auto;
 }
 
 /* IE 9+ */
-%center-trans, .center-trans {
+.center-trans {
 	position: absolute; top: 50%; left: 50%;
 	@include transform( translate(-50%, -50%) );
 }
@@ -148,27 +180,20 @@
 /***** Start: modifying *****/
 
 
-%ir, .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-
-	&:before {
-		content: "";
-		display: block;
-		width: 0;
-		height: 150%;
-	}
+.ir {
+    text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
-%rounded-img, .rounded-img {
+.rounded-img {
 	border-radius: 50%;
 	background-clip: padding-box;
 }
 
 
-%font-smoothing, .font-smoothing {
+.font-smoothing {
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -178,13 +203,13 @@
 /***** Start: misc *****/
 
 
-// Fluid container (ideal for img, embed object & iframe )
-%fluid, .fluid {
+/* Fluid container (ideal for img, embed object & iframe ) */
+.fluid {
 	max-width: 100%;
 	height: auto;
 }
 
-.fluid-google-maps {
+.fluid-google-map {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;

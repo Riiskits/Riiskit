@@ -10,6 +10,12 @@ Domain Path: /languages/
 */
 
 
+@import "../utilities/index";
+
+
+
+
+
 /*------------------------------------*\
     #BROWSE HAPPY PROMT
 \*------------------------------------*/
@@ -39,20 +45,24 @@ Domain Path: /languages/
 
 /*header*/.site-header {
 	background-color: #ccc;
-}
 
-	.site-header__inner {
-		@extend %container-main;
+	&__inner {
+		@include rk-container;
+		width: 100%; max-width: $container-max-width;
 		height: $header-height; line-height: $header-height;
 	}
+}
+
 	@include bp(mobile-big) {
 		.site-header__inner { width: 100% !important; }
 	}
+
 
 		/*a*/.logo {
 			display: block;
 			float: left;
 			margin-right: 10px;
+			margin-left: 5%;
 		}
 
 
@@ -66,6 +76,7 @@ Domain Path: /languages/
 
 /*nav*/.site-header__nav {
 	float: right;
+	margin-right: 5%;
 	text-align: right;
 
 	li {
@@ -82,13 +93,12 @@ Domain Path: /languages/
 	/*li*/.current-menu-item {
 		a {
 			text-decoration: underline;
-			font-weight: bold;
 		}
 	}
 }
 
 /*ul*/.menu-primary {
-	@extend %nav;
+	@include rk-nav;
 	float: right;
 }
 
@@ -102,7 +112,7 @@ Domain Path: /languages/
 
 
 .site-main {
-	@extend %container-main;
+	@include rk-container--main;
 }
 
 
@@ -116,10 +126,8 @@ Domain Path: /languages/
 
 .post { margin-top: 48px; }
 
-	.post .entry__title, .page__title {
-		font-weight: lighter;
-
-		a { @extend %stripped-link; }
+	.entry__meta {
+		span { display: block; }
 	}
 
 
@@ -138,16 +146,18 @@ Domain Path: /languages/
 \*------------------------------------*/
 
 
-/*footer*/.site-footer { background-color: #E4E4E4; }
+/*footer*/.site-footer {
+	background-color: #E4E4E4;
 
-	.site-footer__inner {
-		@extend %container-main;
+	&__inner {
+		@include rk-container--main;
 		margin-top: 48px; padding: 40px 0;
 	}
+}
 
-		.copyright{ float: left; }
+	.copyright{ float: left; }
 
-		.creator{ float: right; text-align: right; }
+	.creator{ float: right; text-align: right; }
 
 
 
@@ -163,9 +173,18 @@ img.alignright { margin-left: 25px; }
 /* Gallery */
 .gallery {
 	overflow: hidden;
-}
 
-	.gallery-item {
-		@extend %box-float;
+	&-item {
+		@include box-float;
 		margin: 2px;
 	}
+}
+
+
+
+
+
+/* ===============PRINT=============== */
+
+
+@import "../base/print";

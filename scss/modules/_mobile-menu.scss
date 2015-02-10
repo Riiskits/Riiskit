@@ -1,15 +1,21 @@
 
+@import "../utilities/index";
+
+
+
+
+
 /*btn*/.toggle-menu-btn {
 	display: none;
 }
 
-	.toggle-menu-btn__title { @extend %visuallyhidden; }
+	.toggle-menu-btn__title { @include screenreader; }
 
 
 
 
 
-@include bp(mobile-big) {
+@include bp(mobile-menu) {
 
 	/*------------------------------------*\
     #MOBILE MENU
@@ -27,12 +33,12 @@
 		}
 
 			/*button*/.toggle-menu-btn {
-				@extend %button;
 				position: relative;
 				display: block;
 				float: right;
 				width: 33px; height: $header-height;
 				margin-right: 5%; padding: 0;
+				border: 0;
 				outline: 0;
 				background-color: transparent;
 			}
@@ -87,13 +93,17 @@
 
 		/*nav*/.site-header__nav {
 			text-align: center;
+
+			/*li*/.current_page_item a,
+			/*li*/.current-menu-item a {
+				background-color: #eee;
+			}
 		}
 
 			/*ul*/.menu-primary {
 				position: relative;
 				width: 100%;
-
-				li { display: block; }
+				@include rk-nav--stacked;
 
 				a {
 					width: 100%;
@@ -126,7 +136,7 @@
 			position: absolute;
 			position: fixed;
 			top: 0;
-			z-index: 999999;
+			z-index: 9999;
 			width: 260px; height: 100%;
 			overflow-x: auto; overflow-y: auto;
 			margin-bottom: 0;
@@ -138,7 +148,6 @@
 				position: relative;
 				display: block;
 				border-bottom: 1px solid #242424;
-				transition: background-color 0.5s ease-out;
 
 				a {
 					display: block;

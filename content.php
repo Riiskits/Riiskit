@@ -32,8 +32,8 @@
 
 		<div class="entry__meta">
 			<?php riiskit_entry_meta(); ?>
-		</div><!-- .entry__meta -->
-	</header><!-- .entry__header -->
+		</div> <!-- .entry__meta -->
+	</header> <!-- .entry__header -->
 
 
 
@@ -54,6 +54,6 @@
 			'separator'   => '<span class="screenreader">, </span>',
 		) );
 		?>
-	</div><!-- .entry__content -->
+	</div> <!-- .entry__content -->
 
-</article><!-- #post-## -->
+</article> <!-- #post-## -->

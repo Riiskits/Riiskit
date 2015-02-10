@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Riiskit 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-28 15:38+0100\n"
+"POT-Creation-Date: 2015-02-10 11:54+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
 "Language-Team: RiisDesign <riisdesign@gmail.com>\n"
@@ -46,9 +46,8 @@ msgid ""
 msgstr ""
 
 #: ../content-page.php:28 ../content.php:49
-#, fuzzy
 msgid "Pages:"
-msgstr "Sider"
+msgstr ""
 
 #: ../content-page.php:32 ../content.php:53 ../index.php:35 ../search.php:37
 msgid "Page"
@@ -94,92 +93,32 @@ msgstr ""
 msgid "Click to visit homepage"
 msgstr ""
 
-#: ../header.php:50
+#: ../header.php:51
 msgid "Skip to content"
 msgstr ""
 
-#: ../header.php:52
+#: ../header.php:53
 msgid "Toggle menu"
 msgstr ""
 
-#: ../header.php:55
+#: ../header.php:56
 msgid "Click the icon to open menu"
 msgstr ""
 
-#: ../header.php:59
+#: ../header.php:60
 msgid "Menu"
 msgstr ""
 
-#: ../inc/admin/customizer.php:23
+#: ../inc/admin/customizer.php:22
 msgid "Developer"
 msgstr ""
 
-#: ../inc/admin/customizer.php:25
+#: ../inc/admin/customizer.php:24
 msgid "Options for the developer."
 msgstr ""
 
-#: ../inc/admin/customizer.php:35
-msgid "Menu Type"
-msgstr ""
-
-#: ../inc/admin/customizer.php:52
-msgid "Slideout Placement"
-msgstr ""
-
-#: ../inc/admin/customizer.php:57 ../inc/admin/customizer.php:322
-msgid "Right"
-msgstr ""
-
-#: ../inc/admin/customizer.php:58 ../inc/admin/customizer.php:321
-msgid "Left"
-msgstr ""
-
-#: ../inc/admin/customizer.php:65
-msgid "Footer"
-msgstr ""
-
-#: ../inc/admin/customizer.php:66
-msgid "Write some text that will show in your footer (e.g. copyright)."
-msgstr ""
-
-#: ../inc/admin/customizer.php:75
-msgid "Footer text"
-msgstr ""
-
-#: ../inc/admin/customizer.php:83
-msgid "Social"
-msgstr ""
-
-#: ../inc/admin/customizer.php:84
-msgid "Add links to your social profiles etc."
-msgstr ""
-
-#: ../inc/admin/customizer.php:91
-msgid "Facebook link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:96
-msgid "Twitter link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:101
-msgid "Google+ link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:106
-msgid "Instagram link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:111
-msgid "YouTube link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:116
-msgid "Dribble link"
-msgstr ""
-
-#: ../inc/admin/customizer.php:121
-msgid "Github link"
+#: ../inc/admin/customizer.php:34
+msgid "Menutype"
 msgstr ""
 
 #: ../inc/admin/preset-library.php:9
@@ -246,56 +185,34 @@ msgid ""
 "Please upgrade and try again."
 msgstr ""
 
-#: ../inc/template-tags.php:242
-msgid "Featured"
+#: ../inc/template-tags.php:252
+msgctxt "Used before updated date."
+msgid "Updated"
 msgstr ""
 
-#: ../inc/template-tags.php:248
-msgctxt "Used before post format."
-msgid "Format"
-msgstr ""
-
-#: ../inc/template-tags.php:269
+#: ../inc/template-tags.php:258
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr ""
 
-#: ../inc/template-tags.php:278
+#: ../inc/template-tags.php:268
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr ""
 
-#: ../inc/template-tags.php:284 ../inc/template-tags.php:292
+#: ../inc/template-tags.php:275 ../inc/template-tags.php:284
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ""
 
-#: ../inc/template-tags.php:287
-#, fuzzy
+#: ../inc/template-tags.php:278
 msgctxt "Used before category names."
 msgid "Categories"
-msgstr "Kategorier"
+msgstr ""
 
-#: ../inc/template-tags.php:295
+#: ../inc/template-tags.php:287
 msgctxt "Used before tag names."
 msgid "Tags"
-msgstr ""
-
-#: ../inc/template-tags.php:306
-msgctxt "Used before full size attachment link."
-msgid "Full size"
-msgstr ""
-
-#: ../inc/template-tags.php:315
-msgid "Leave a comment"
-msgstr ""
-
-#: ../inc/template-tags.php:315
-msgid "1 Comment"
-msgstr ""
-
-#: ../inc/template-tags.php:315
-msgid "% Comments"
 msgstr ""
 
 #: ../index.php:33 ../search.php:35

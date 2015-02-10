@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Riiskit 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-28 15:39+0100\n"
+"POT-Creation-Date: 2015-02-10 11:55+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
 "Language-Team: RiisDesign <riisdesign@gmail.com>\n"
@@ -101,95 +101,33 @@ msgstr ""
 msgid "Click to visit homepage"
 msgstr "Trykk for å besøke forsiden"
 
-#: ../header.php:50
+#: ../header.php:51
 msgid "Skip to content"
 msgstr "Skipp til innhold"
 
-#: ../header.php:52
+#: ../header.php:53
 msgid "Toggle menu"
 msgstr "Vekslingsmeny"
 
-#: ../header.php:55
+#: ../header.php:56
 msgid "Click the icon to open menu"
 msgstr "Klikk på ikonet for å åpne meny"
 
-#: ../header.php:59
+#: ../header.php:60
 msgid "Menu"
 msgstr "Meny"
 
-#: ../inc/admin/customizer.php:23
+#: ../inc/admin/customizer.php:22
 msgid "Developer"
 msgstr "Utvikler"
 
-#: ../inc/admin/customizer.php:25
+#: ../inc/admin/customizer.php:24
 msgid "Options for the developer."
 msgstr "Innstillinger for utvikler/e."
 
-#: ../inc/admin/customizer.php:35
-msgid "Menu Type"
-msgstr "Meny Type"
-
-#: ../inc/admin/customizer.php:52
-msgid "Slideout Placement"
-msgstr "Slideout Plassering"
-
-#: ../inc/admin/customizer.php:57 ../inc/admin/customizer.php:322
-msgid "Right"
-msgstr "Høyre"
-
-#: ../inc/admin/customizer.php:58 ../inc/admin/customizer.php:321
-msgid "Left"
-msgstr "Venstre"
-
-#: ../inc/admin/customizer.php:65
-msgid "Footer"
-msgstr "Footer / Bunn"
-
-#: ../inc/admin/customizer.php:66
-msgid "Write some text that will show in your footer (e.g. copyright)."
-msgstr ""
-"Skriv noe tekst som vil vises i bunnen av nettsiden din (f.eks. "
-"opphavsrettigheter)."
-
-#: ../inc/admin/customizer.php:75
-msgid "Footer text"
-msgstr "Footer tekst"
-
-#: ../inc/admin/customizer.php:83
-msgid "Social"
-msgstr "Sosialt"
-
-#: ../inc/admin/customizer.php:84
-msgid "Add links to your social profiles etc."
-msgstr "Legg inn linker til dine sosiale profiler etc."
-
-#: ../inc/admin/customizer.php:91
-msgid "Facebook link"
-msgstr "Facebook link"
-
-#: ../inc/admin/customizer.php:96
-msgid "Twitter link"
-msgstr "Twitter link"
-
-#: ../inc/admin/customizer.php:101
-msgid "Google+ link"
-msgstr "Google+ link"
-
-#: ../inc/admin/customizer.php:106
-msgid "Instagram link"
-msgstr "Instagram link"
-
-#: ../inc/admin/customizer.php:111
-msgid "YouTube link"
-msgstr "YouTube link"
-
-#: ../inc/admin/customizer.php:116
-msgid "Dribble link"
-msgstr "Dribble link"
-
-#: ../inc/admin/customizer.php:121
-msgid "Github link"
-msgstr "Github link"
+#: ../inc/admin/customizer.php:34
+msgid "Menutype"
+msgstr "Menystil"
 
 #: ../inc/admin/preset-library.php:9
 msgctxt "reference"
@@ -257,56 +195,35 @@ msgstr ""
 "Riiskit krever ihvertfall WordPress versjon 4.1. Du kjører nå versjon %s. "
 "Vær snill og oppgrader og prøv igjen."
 
-#: ../inc/template-tags.php:242
-msgid "Featured"
-msgstr "Fremhevet"
+#: ../inc/template-tags.php:252
+msgctxt "Used before updated date."
+msgid "Updated"
+msgstr "﻿Oppdatert"
 
-#: ../inc/template-tags.php:248
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "Format"
-
-#: ../inc/template-tags.php:269
+#: ../inc/template-tags.php:258
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publisert"
 
-#: ../inc/template-tags.php:278
+#: ../inc/template-tags.php:268
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Skribent"
 
-#: ../inc/template-tags.php:284 ../inc/template-tags.php:292
+#: ../inc/template-tags.php:275 ../inc/template-tags.php:284
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ","
 
-#: ../inc/template-tags.php:287
+#: ../inc/template-tags.php:278
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Kategorier"
 
-#: ../inc/template-tags.php:295
+#: ../inc/template-tags.php:287
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Merkelapper"
-
-#: ../inc/template-tags.php:306
-msgctxt "Used before full size attachment link."
-msgid "Full size"
-msgstr "Fullstørrelse"
-
-#: ../inc/template-tags.php:315
-msgid "Leave a comment"
-msgstr "Etterlat en kommentar"
-
-#: ../inc/template-tags.php:315
-msgid "1 Comment"
-msgstr "1 Kommentar"
-
-#: ../inc/template-tags.php:315
-msgid "% Comments"
-msgstr "% Kommentarer"
 
 #: ../index.php:33 ../search.php:35
 msgid "Previous page"
@@ -340,6 +257,73 @@ msgstr "Forrige"
 #: ../single.php:27
 msgid "Previous post:"
 msgstr "Forrige innlegg:"
+
+#~ msgid "Slideout Placement"
+#~ msgstr "Slideout Plassering"
+
+#~ msgid "Right"
+#~ msgstr "Høyre"
+
+#~ msgid "Left"
+#~ msgstr "Venstre"
+
+#~ msgid "Footer"
+#~ msgstr "Footer / Bunn"
+
+#~ msgid "Write some text that will show in your footer (e.g. copyright)."
+#~ msgstr ""
+#~ "Skriv noe tekst som vil vises i bunnen av nettsiden din (f.eks. "
+#~ "opphavsrettigheter)."
+
+#~ msgid "Footer text"
+#~ msgstr "Footer tekst"
+
+#~ msgid "Social"
+#~ msgstr "Sosialt"
+
+#~ msgid "Add links to your social profiles etc."
+#~ msgstr "Legg inn linker til dine sosiale profiler etc."
+
+#~ msgid "Facebook link"
+#~ msgstr "Facebook link"
+
+#~ msgid "Twitter link"
+#~ msgstr "Twitter link"
+
+#~ msgid "Google+ link"
+#~ msgstr "Google+ link"
+
+#~ msgid "Instagram link"
+#~ msgstr "Instagram link"
+
+#~ msgid "YouTube link"
+#~ msgstr "YouTube link"
+
+#~ msgid "Dribble link"
+#~ msgstr "Dribble link"
+
+#~ msgid "Github link"
+#~ msgstr "Github link"
+
+#~ msgid "Featured"
+#~ msgstr "Fremhevet"
+
+#~ msgctxt "Used before post format."
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgctxt "Used before full size attachment link."
+#~ msgid "Full size"
+#~ msgstr "Fullstørrelse"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Etterlat en kommentar"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Kommentar"
+
+#~ msgid "% Comments"
+#~ msgstr "% Kommentarer"
 
 #~ msgid "Mobile menu in slideout sidebar"
 #~ msgstr "Mobilmeny i slideout sidestolpe"

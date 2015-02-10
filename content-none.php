@@ -16,7 +16,7 @@
 		<h1 class="page__title">
 			<?php _e( 'Nothing Found', 'riiskit' ); ?>
 		</h1>
-	</header><!-- .page__header -->
+	</header> <!-- .page__header -->
 
 
 

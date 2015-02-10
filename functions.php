@@ -177,11 +177,23 @@ function riiskit_stylesheets() {
 	// google fonts
 	wp_enqueue_style( 'riiskit-google-fonts', riiskit_fonts_url(), array(), null );
 
-	// normalize.css
-	wp_enqueue_style( 'riiskit-normalize', get_template_directory_uri() . '/css/utilities/normalize.css', array(), '3.0.0', true );
+	// utilities/normalize.css
+	wp_enqueue_style( 'riiskit-normalize', get_template_directory_uri() . '/css/utilities/normalize.css', array(), '3.0.2', null );
+
+	// base/elements.css
+	wp_enqueue_style( 'riiskit-elements', get_template_directory_uri() . '/css/base/elements.css', array(), '1.0.1', null );
 
 	// style.css
-	wp_enqueue_style( 'riiskit-style', get_stylesheet_uri(), array( 'riiskit-normalize' ), '1.0.0' );
+	wp_enqueue_style( 'riiskit-style', get_stylesheet_uri(), array(
+		'riiskit-normalize',
+		'riiskit-elements',
+	), '1.0.1', null );
+
+	// modules/mobile-menu.css
+	wp_enqueue_style( 'riiskit-mobile-menu', get_template_directory_uri() . '/css/modules/mobile-menu.css', array(), '1.0.1', null );
+
+	// utilities/helpers.css
+	wp_enqueue_style( 'riiskit-helpers', get_template_directory_uri() . '/css/utilities/helpers.css', array(), '1.0.1', null );
 }
 add_action( 'wp_enqueue_scripts', 'riiskit_stylesheets' );
 
@@ -195,13 +207,8 @@ add_action( 'wp_enqueue_scripts', 'riiskit_stylesheets' );
  * @return void
  */
 function riiskit_scripts() {
-	// comment-reply.js
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-
 	// sidr.js
-	if ( 'slideout-menu' === get_option('mobile_menu_type') ) {
+	if ( 'slideout-menu' === get_option('developer_menu_type') ) {
 		wp_enqueue_script( 'riiskit-sidr', get_template_directory_uri() . '/js/vendor/jquery.sidr.js', array( 'jquery' ), '1.2.1', true );
 	}
 
@@ -268,15 +275,11 @@ function riiskit_body_classes( $classes ) {
 	// Mobile menus
 	$classes[] = 'mobile-menu';
 
-	if ( 'toggle-menu' === get_option('mobile_menu_type') ) {
+	if ( 'toggle-menu' === get_option('developer_menu_type') ) {
 		$classes[] = 'mobile-menu-type__toggle';
 	}
-
-	if ( 'slideout-menu' === get_option('mobile_menu_type') ) {
+	if ( 'slideout-menu' === get_option('developer_menu_type') ) {
 		$classes[] = 'mobile-menu-type__slideout';
-	}
-	if ( 'slideout-left' === get_option('mobile_menu_pos') ) {
-		$classes[] = 'mobile-menu-pos--left';
 	}
 
 	return $classes;
@@ -343,7 +346,7 @@ require_once( RIISKIT_BASE . 'inc/template-tags.php' );
  *
  * @since Riiskit 1.0.0
  */
-require_once( RIISKIT_BASE . 'inc/plugin-filters.php' );
+//require_once( RIISKIT_BASE . 'inc/plugin-filters.php' );
 
 /**
  * WP Customizer theme options.

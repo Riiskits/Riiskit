@@ -1,7 +1,5 @@
 
-/*------------------------------------*\
-    #VARIABLES
-\*------------------------------------*/
+// ====== VARIABLES ======
 
 
 // Enable font smoothing?
@@ -32,8 +30,8 @@ $base-font-secondary: "Cantata One", "Times, Times New Roman", serif !default;
 
 // Breakpoints
 $breakpoints: (
-	wp-adminbar:	782px,
-	mobile-big:		649px,
-	iphone-p:		320px,
+	mobile-menu:	649px,
+	mobile-big:		550px,
 	iphone-l:		480px,
+	iphone-p:		320px,
 );
