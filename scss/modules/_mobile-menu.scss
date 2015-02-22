@@ -30,6 +30,8 @@
 		/*nav*/.site-header__nav {
 			float: none;
 			width: 100%; height: auto;
+
+			li { margin-left: 0; }
 		}
 
 			/*button*/.toggle-menu-btn {
@@ -112,7 +114,7 @@
 					text-align: center;
 					background-color: #fff;
 
-					&:hover {
+					&:hover, &:focus {
 						text-decoration: none;
 						background-color: #eee;
 					}
@@ -155,7 +157,7 @@
 					padding: 10px;
 					color: #ccc;
 
-					&:hover {
+					&:hover, &:focus {
 						text-decoration: none;
 						background-color: #5a5858;
 					}

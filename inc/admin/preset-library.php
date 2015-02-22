@@ -71,6 +71,7 @@ function register_riiskit_employee()
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
+        'menu_icon' => 'dashicons-groups',
 
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,

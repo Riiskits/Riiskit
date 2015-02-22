@@ -47,23 +47,26 @@ Domain Path: /languages/
 	background-color: #ccc;
 
 	&__inner {
-		@include rk-container;
-		width: 100%; max-width: $container-max-width;
+		@include rk-container--main;
 		height: $header-height; line-height: $header-height;
 	}
 }
 
-	@include bp(mobile-big) {
-		.site-header__inner { width: 100% !important; }
+	/*a*/.logo {
+		display: block;
+		float: left;
+		margin-right: 10px;
 	}
 
+@include bp(mobile-menu) {
+	.site-header__inner {
+		width: 100%;
+	}
 
 		/*a*/.logo {
-			display: block;
-			float: left;
-			margin-right: 10px;
 			margin-left: 5%;
 		}
+}
 
 
 
@@ -76,7 +79,6 @@ Domain Path: /languages/
 
 /*nav*/.site-header__nav {
 	float: right;
-	margin-right: 5%;
 	text-align: right;
 
 	li {
@@ -97,10 +99,16 @@ Domain Path: /languages/
 	}
 }
 
-/*ul*/.menu-primary {
-	@include rk-nav;
-	float: right;
+@include bp(mobile-menu) {
+	/*nav*/.site-header__nav {
+		margin-right: 5%;
+	}
 }
+
+	/*ul*/.menu-primary {
+		@include rk-nav;
+		float: right;
+	}
 
 
 
@@ -147,11 +155,12 @@ Domain Path: /languages/
 
 
 /*footer*/.site-footer {
+	margin-top: 48px;
 	background-color: #E4E4E4;
 
 	&__inner {
 		@include rk-container--main;
-		margin-top: 48px; padding: 40px 0;
+		padding: 40px 0;
 	}
 }
 

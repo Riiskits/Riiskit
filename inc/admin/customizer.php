@@ -40,6 +40,39 @@ function riiskit_theme_customizer( $wp_customize ) {
             'slideout-menu' => 'Slideout',
         ),
 	) );
+
+
+	// SOCIAL
+	$wp_customize->add_section( 'social', array(
+		'title'       => __( 'Social', 'riiskit' ),
+		'description' => __('Add links to your social profiles.', 'riiskit'),
+		'priority'    => 135,
+	) );
+	$social_links = array();
+    // Facebook
+	$social_links[] = array(
+        'slug'	=> 'social_facebook_link',
+        'label'	=> __('Facebook', 'riiskit'),
+    );
+	// Twitter
+    $social_links[] = array(
+        'slug'	=> 'social_twitter_link',
+		'label'	=> __('Twitter', 'riiskit'),
+    );
+    foreach( $social_links as $link ) {
+		// SETTINGS
+		$wp_customize->add_setting( $link['slug'], array(
+            'type' => 'option',
+			'sanitize_callback' => 'riiskit_sanitize_url',
+        ) );
+        // CONTROLS
+        $wp_customize->add_control( $link['slug'], array(
+			'label' => $link['label'],
+			'section' => 'social',
+			'settings' => $link['slug'],
+			'type' => 'text',
+		) );
+	}
 }
 add_action( 'customize_register', 'riiskit_theme_customizer' );
 

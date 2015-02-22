@@ -170,8 +170,6 @@ function riiskit_fonts_url() {
  * Enqueue stylesheets for the front end.
  *
  * @since Riiskit 1.0.0
- *
- * @return void
  */
 function riiskit_stylesheets() {
 	// google fonts
@@ -183,7 +181,7 @@ function riiskit_stylesheets() {
 	// base/elements.css
 	wp_enqueue_style( 'riiskit-elements', get_template_directory_uri() . '/css/base/elements.css', array(), '1.0.1', null );
 
-	// style.css
+	// style.css (main stylesheet)
 	wp_enqueue_style( 'riiskit-style', get_stylesheet_uri(), array(
 		'riiskit-normalize',
 		'riiskit-elements',
@@ -203,11 +201,9 @@ add_action( 'wp_enqueue_scripts', 'riiskit_stylesheets' );
  * Enqueue scripts for the front end.
  *
  * @since Riiskit 1.0.0
- *
- * @return void
  */
 function riiskit_scripts() {
-	// sidr.js
+	// vendor/jquery.sidr.js
 	if ( 'slideout-menu' === get_option('developer_menu_type') ) {
 		wp_enqueue_script( 'riiskit-sidr', get_template_directory_uri() . '/js/vendor/jquery.sidr.js', array( 'jquery' ), '1.2.1', true );
 	}
@@ -215,8 +211,17 @@ function riiskit_scripts() {
 	// plugins.js
 	wp_enqueue_script( 'riiskit-plugins', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), '1.0.0', true );
 
+	// mobile-menu.js
+	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(
+		'jquery',
+		'riiskit-plugins',
+	), '1.0.0', true );
+
 	// main.js
-	wp_enqueue_script( 'riiskit-main', get_template_directory_uri() . '/js/main.js', array( 'jquery', 'riiskit-plugins' ), '1.0.0', true );
+	wp_enqueue_script( 'riiskit-main', get_template_directory_uri() . '/js/main.js', array(
+		'jquery',
+		'riiskit-plugins',
+	), '1.0.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'riiskit_scripts' );
 
@@ -264,10 +269,6 @@ add_filter('excerpt_more', 'riiskit_new_excerpt_more');
  * @return array The filtered body class list.
  */
 function riiskit_body_classes( $classes ) {
-	if ( is_multi_author() ) {
-		$classes[] = 'group-blog';
-	}
-
 	if ( is_singular() && ! is_front_page() ) {
 		$classes[] = 'singular';
 	}
@@ -326,6 +327,13 @@ if ( ! defined( 'RIISKIT_AUTHOR_URL' ) ) {
 }
 
 
+
+/**
+ * Useful utility functions for common tasks.
+ *
+ * @since Riiskit 1.1.0
+ */
+require_once( RIISKIT_BASE . 'inc/utility-functions.php' );
 
 /**
  * Useful template tags extending the WP API.

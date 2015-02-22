@@ -12,7 +12,6 @@
 html { overflow-x: hidden; overflow-y: scroll; }
 
 html, body {
-	margin: 0;
 	font: 1em/1.47 $base-font-primary;
 	color: color(base-font);
 
@@ -89,23 +88,13 @@ video {
 
 /* Start: forms */
 
-fieldset {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	margin: 0 0 24px; padding: 11px 12px 0;
-}
-
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"],
 input[type="search"],
 input[type="password"] {
-	padding: 4px;
-	border: 0;
 	-webkit-appearance: none !important;
-	border-radius: 0 !important;
-	background-color: #ccc;
 }
 
 input[type="submit"],
@@ -113,20 +102,13 @@ input[type="reset"],
 input[type="button"],
 button {
 	border: 0;
-	border-radius: 0 !important;
 	cursor: pointer;
 }
 
 
-fieldset { border: 0; margin: 0; padding: 0; }
-
-
 textarea {
 	resize: vertical;
-	padding: 4px;
-	border: 0;
 	border-radius: 0;
-	background-color: #ccc;
 }
 
 

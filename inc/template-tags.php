@@ -163,15 +163,15 @@ if( ! function_exists( 'riiskit_get_attachment_img' ) ) :
  * just set the "div" boolean to true and it will return a div
  * with "background-size: cover;".
  *
- * @param integer $attachment_id, array $options(string 'size', string 'styling class', boolean 'div')
+ * @param integer $attachment_id, array $options(string 'size', string 'class', boolean 'div')
  * @return image or div with the attachment image src as a string
  *
  * @since Riiskit 1.0.0
  */
-function riiskit_get_attachment_img($attachment_id = '', $options = array())
+function riiskit_get_attachment_img( $attachment_id = '', $options = array() )
 {
 	$options = array_merge( array(
-		'size'			=> 'post-thumbnails',
+		'size'			=> 'post-thumbnail',
 		'class'			=> '',
 		'div'			=> false,
 	), $options);
@@ -201,32 +201,22 @@ if ( ! function_exists( 'riiskit_post_thumbnail' ) ) :
 /**
  * Display an optional post thumbnail.
  *
- * Wraps the post thumbnail in an anchor element on index views, or a div
- * element when on single views.
+ * @param array $options(integer id, string size, string class)
  *
  * @since Riiskit 1.0.0
  */
-function riiskit_post_thumbnail() {
-	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+function riiskit_post_thumbnail( $options = array() ) {
+	$options = array_merge( array(
+		'id'			=> get_the_id(),
+		'size'			=> 'post-thumbnail',
+		'class'			=> '',
+	), $options);
+
+	if ( post_password_required() || is_attachment() || ! has_post_thumbnail($options['id']) ) {
 		return;
 	}
 
-	if ( is_singular() ) :
-	?>
-
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div>
-
-	<?php else : ?>
-
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-		<?php
-			the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) );
-		?>
-	</a>
-
-	<?php endif; // End is_singular()
+	echo get_the_post_thumbnail( $options['id'], $options['size'], array( 'class' => $options['class'] ) );
 }
 endif;
 
