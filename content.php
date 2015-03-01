@@ -2,7 +2,7 @@
 /**
  * The default template for displaying content
  *
- * Used for both single and index/archive/search.
+ * Used for both single and index/archive.
  *
  * @package Wordpress
  * @subpackage Riiskit
@@ -19,20 +19,20 @@
 	<header class="entry__header">
 		<?php
 		if ( is_single() ) : ?>
-			<h1 class="entry__title">
+			<h1 class="entry__header__title">
 				<?php the_title(); ?>
 			</h1>
 		<?php else : ?>
-			<h2 class="entry__title">
+			<h2 class="entry__header__title">
 				<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
 					<?php the_title(); ?>
 				</a>
 			</h2>
 		<?php endif; ?>
 
-		<div class="entry__meta">
+		<div class="entry__header__meta">
 			<?php riiskit_entry_meta(); ?>
-		</div> <!-- .entry__meta -->
+		</div>
 	</header> <!-- .entry__header -->
 
 

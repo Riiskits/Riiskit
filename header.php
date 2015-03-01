@@ -40,8 +40,8 @@
 		<header class="site-header" role="banner">
 			<div class="site-header__inner">
 
-				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php _e('Click to visit homepage', 'riiskit'); ?>" rel="home">
-					<img src="<?php echo RIISKIT_BASE_URL . 'img/logo.png'; ?>" alt="<?php echo esc_html( get_bloginfo('name') ); ?>" width="" height="" />
+				<a class="site-header__inner__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php _e('Click to visit homepage', 'riiskit'); ?>" rel="home">
+					<img src="<?php echo RIISKIT_BASE_URL . 'img/logo.png'; ?>" alt="<?php echo esc_html( get_bloginfo('name') ); ?>" width="80" height="80" />
 				</a>
 
 

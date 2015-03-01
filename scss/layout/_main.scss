@@ -49,23 +49,23 @@ Domain Path: /languages/
 	&__inner {
 		@include rk-container--main;
 		height: $header-height; line-height: $header-height;
+
+		/*a*/&__logo {
+			display: block;
+			float: left;
+		}
 	}
 }
 
-	/*a*/.logo {
-		display: block;
-		float: left;
-		margin-right: 10px;
-	}
-
 @include bp(mobile-menu) {
+
 	.site-header__inner {
 		width: 100%;
-	}
 
-		/*a*/.logo {
+		/*a*/&__logo {
 			margin-left: 5%;
 		}
+	}
 }
 
 
@@ -134,7 +134,7 @@ Domain Path: /languages/
 
 .post { margin-top: 48px; }
 
-	.entry__meta {
+	.entry__header__meta {
 		span { display: block; }
 	}
 
@@ -143,6 +143,20 @@ Domain Path: /languages/
 	.entry__summary,
 	.page__content {
 		word-wrap: break-word;
+	}
+
+
+	.nav-previous {
+		a:before {
+			/* left arrow with spacing */
+			content: "\2190 \00a0";
+		}
+	}
+	.nav-next {
+		a:after {
+			/* right arrow with spacing */
+			content: "\00a0 \2192";
+		}
 	}
 
 
@@ -164,9 +178,9 @@ Domain Path: /languages/
 	}
 }
 
-	.copyright{ float: left; }
+	.copyright { float: left; }
 
-	.creator{ float: right; text-align: right; }
+	.creator { float: right; text-align: right; }
 
 
 

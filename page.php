@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<section class="primary">
+	<section id="primary" class="primary">
 		<main class="content" role="main">
 
 			<?php

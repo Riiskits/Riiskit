@@ -194,6 +194,15 @@
 }
 
 
+//===== Start: decoration =====
+
+
+@mixin pseudo-elem {
+	position: absolute;
+	content: "";
+}
+
+
 //===== Start: misc =====
 
 

@@ -13,7 +13,7 @@
 <section class="no-results not-found">
 
 	<header class="page__header">
-		<h1 class="page__title">
+		<h1 class="page__header__title">
 			<?php _e( 'Nothing Found', 'riiskit' ); ?>
 		</h1>
 	</header> <!-- .page__header -->

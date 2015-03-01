@@ -57,7 +57,7 @@ if ( ! function_exists( 'riiskit_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		// This theme styles the visual editor to resemble the theme style.
-		//add_editor_style( array( 'inc/admin/css/editor-style.css', riiskit_fonts_url() ) );
+		//add_editor_style( array( 'inc/admin/css/editor-style.css' ) );
 
 		/**
 		 * Enable support for Post Thumbnails, and declare one size.
@@ -110,71 +110,11 @@ endif;
 
 
 /**
- * Register three Riiskit widget areas.
- *
- * @since Riiskit 1.0.0
- *
- * @return void
- */
-function riiskit_widgets_init() {
-	// Mobile
-	register_sidebar( array(
-		'name' => __( 'Mobile Sidebar', 'riiskit' ),
-		'id' => 'sidebar-mobile',
-		'description' => __( 'Slideout sidebar for mobile devices. Put your navigation etc. here.', 'riiskit' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s mobile-widget">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'riiskit_widgets_init' );
-
-
-
-/**
- * Register Google fonts for Riiskit.
- *
- * @since Riiskit 1.0.0
- *
- * @return string
- */
-function riiskit_fonts_url() {
-	$fonts_url = '';
-
-	/* Translators: If there are characters in your language that are not
-	 * supported by Open Sans, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$cantata_one = _x( 'on', 'Cantata One font: on or off', 'riiskit' );
-
-	if ( 'off' !== $cantata_one ) {
-		$font_families = array();
-
-		if ( 'off' !== $cantata_one ) {
-			$font_families[] = 'Cantata+One:400';
-		}
-
-		$query_args = array(
-			'family' => implode( '|', $font_families ),
-		);
-		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
-	}
-
-	return $fonts_url;
-}
-
-
-
-/**
  * Enqueue stylesheets for the front end.
  *
  * @since Riiskit 1.0.0
  */
 function riiskit_stylesheets() {
-	// google fonts
-	wp_enqueue_style( 'riiskit-google-fonts', riiskit_fonts_url(), array(), null );
-
 	// utilities/normalize.css
 	wp_enqueue_style( 'riiskit-normalize', get_template_directory_uri() . '/css/utilities/normalize.css', array(), '3.0.2', null );
 
@@ -212,7 +152,7 @@ function riiskit_scripts() {
 	wp_enqueue_script( 'riiskit-plugins', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), '1.0.0', true );
 
 	// mobile-menu.js
-	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(
+	wp_enqueue_script( 'riiskit-mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(
 		'jquery',
 		'riiskit-plugins',
 	), '1.0.0', true );
@@ -234,11 +174,11 @@ add_action( 'wp_enqueue_scripts', 'riiskit_scripts' );
  */
 function riiskit_scripts_head() { ?>
 	<!--[if (lt IE 9) & (!IEMobile)]>
-		<script src="<?php echo get_template_directory_uri(); ?>/style/js/vendor/html5.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/html5.js"></script>
     <![endif]-->
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-		<script src="<?php echo get_template_directory_uri(); ?>/style/js/vendor/selectivizr.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/selectivizr.min.js"></script>
     <![endif]-->
 
 	<!-- Battle the FOUC (remove if using Modernizr) -->

@@ -9,7 +9,7 @@
 
 
 /**
- * Remove whitespace, + and "-".
+ * Remove whitespace and "-".
  *
  * Useful for e.g. using href="tel:".
  * No need for escaping as it converts the string to an integer.
@@ -20,5 +20,5 @@
  * @return trimmed $string with str_replace
  */
 function riiskit_trim_phonenr($string) {
-	return absint( str_replace( array(" ", "+", "-"), "", $string ) );
+	return absint( str_replace( array(" ", "-"), "", $string ) );
 }
