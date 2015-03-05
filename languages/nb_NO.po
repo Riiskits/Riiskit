@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Riiskit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 11:55+0100\n"
+"POT-Creation-Date: 2015-03-05 19:31+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
 "Language-Team: Christoffer Riis <christoffer.riis@gmail.com>\n"
@@ -75,20 +75,6 @@ msgstr "Laget av"
 msgid "Primary menu, typically used in the header etc."
 msgstr "Hovedmeny, oftest brukt i headeren/topp."
 
-#: ../functions.php:122
-msgid "Mobile Sidebar"
-msgstr "Mobil Sidestolpe"
-
-#: ../functions.php:124
-msgid "Slideout sidebar for mobile devices. Put your navigation etc. here."
-msgstr ""
-"Slideout sidestolpe for mobile enheter. Plasser navigasjonen din etc. her."
-
-#: ../functions.php:149
-msgctxt "Cantata One font: on or off"
-msgid "on"
-msgstr "på"
-
 #: ../header.php:31
 msgid ""
 "You are using an outdated, slow and unsecure browser. Please upgrade to "
@@ -101,33 +87,45 @@ msgstr ""
 msgid "Click to visit homepage"
 msgstr "Trykk for å besøke forsiden"
 
-#: ../header.php:51
+#: ../header.php:50
 msgid "Skip to content"
 msgstr "Skipp til innhold"
 
-#: ../header.php:53
+#: ../header.php:52
 msgid "Toggle menu"
 msgstr "Vekslingsmeny"
 
-#: ../header.php:56
+#: ../header.php:54
 msgid "Click the icon to open menu"
 msgstr "Klikk på ikonet for å åpne meny"
 
-#: ../header.php:60
+#: ../header.php:57
 msgid "Menu"
 msgstr "Meny"
 
-#: ../inc/admin/customizer.php:22
+#: ../inc/admin/admin.php:27
+msgid "Go back to the website"
+msgstr "Gå tilbake til nettsiden"
+
+#: ../inc/admin/customizer.php:21
 msgid "Developer"
 msgstr "Utvikler"
 
-#: ../inc/admin/customizer.php:24
+#: ../inc/admin/customizer.php:23
 msgid "Options for the developer."
 msgstr "Innstillinger for utvikler/e."
 
-#: ../inc/admin/customizer.php:34
+#: ../inc/admin/customizer.php:33
 msgid "Menutype"
 msgstr "Menystil"
+
+#: ../inc/admin/customizer.php:46
+msgid "Social"
+msgstr "Sosialt"
+
+#: ../inc/admin/customizer.php:47
+msgid "Add links to your social profiles."
+msgstr "Legg inn lenker til dine sosiale profiler."
 
 #: ../inc/admin/preset-library.php:9
 msgctxt "reference"
@@ -195,32 +193,32 @@ msgstr ""
 "Riiskit krever ihvertfall WordPress versjon 4.1. Du kjører nå versjon %s. "
 "Vær snill og oppgrader og prøv igjen."
 
-#: ../inc/template-tags.php:252
+#: ../inc/template-tags.php:242
 msgctxt "Used before updated date."
 msgid "Updated"
 msgstr "﻿Oppdatert"
 
-#: ../inc/template-tags.php:258
+#: ../inc/template-tags.php:248
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publisert"
 
-#: ../inc/template-tags.php:268
+#: ../inc/template-tags.php:258
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Skribent"
 
-#: ../inc/template-tags.php:275 ../inc/template-tags.php:284
+#: ../inc/template-tags.php:265 ../inc/template-tags.php:274
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ","
 
-#: ../inc/template-tags.php:278
+#: ../inc/template-tags.php:268
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Kategorier"
 
-#: ../inc/template-tags.php:287
+#: ../inc/template-tags.php:277
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Merkelapper"
@@ -243,20 +241,36 @@ msgid "Search"
 msgstr "Søk"
 
 #: ../single.php:23
-msgid "Next"
-msgstr "Neste"
-
-#: ../single.php:24
 msgid "Next post:"
 msgstr "Neste innlegg:"
 
-#: ../single.php:26
-msgid "Previous"
-msgstr "Forrige"
-
-#: ../single.php:27
+#: ../single.php:25
 msgid "Previous post:"
 msgstr "Forrige innlegg:"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#, fuzzy
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Mobile Sidebar"
+#~ msgstr "Mobil Sidestolpe"
+
+#~ msgid "Slideout sidebar for mobile devices. Put your navigation etc. here."
+#~ msgstr ""
+#~ "Slideout sidestolpe for mobile enheter. Plasser navigasjonen din etc. her."
+
+#~ msgctxt "Cantata One font: on or off"
+#~ msgid "on"
+#~ msgstr "på"
+
+#~ msgid "Next"
+#~ msgstr "Neste"
+
+#~ msgid "Previous"
+#~ msgstr "Forrige"
 
 #~ msgid "Slideout Placement"
 #~ msgstr "Slideout Plassering"
@@ -277,18 +291,6 @@ msgstr "Forrige innlegg:"
 
 #~ msgid "Footer text"
 #~ msgstr "Footer tekst"
-
-#~ msgid "Social"
-#~ msgstr "Sosialt"
-
-#~ msgid "Add links to your social profiles etc."
-#~ msgstr "Legg inn linker til dine sosiale profiler etc."
-
-#~ msgid "Facebook link"
-#~ msgstr "Facebook link"
-
-#~ msgid "Twitter link"
-#~ msgstr "Twitter link"
 
 #~ msgid "Google+ link"
 #~ msgstr "Google+ link"

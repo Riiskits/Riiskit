@@ -12,7 +12,6 @@
 function riiskit_theme_customizer( $wp_customize ) {
 	$wp_customize->remove_section( 'colors' );
 	$wp_customize->remove_section( 'background_image' );
-	$wp_customize->remove_section( 'nav' );
 	$wp_customize->remove_section( 'static_front_page' );
 
 
@@ -52,12 +51,12 @@ function riiskit_theme_customizer( $wp_customize ) {
     // Facebook
 	$social_links[] = array(
         'slug'	=> 'social_facebook_link',
-        'label'	=> __('Facebook', 'riiskit'),
+        'label'	=> 'Facebook',
     );
 	// Twitter
     $social_links[] = array(
         'slug'	=> 'social_twitter_link',
-		'label'	=> __('Twitter', 'riiskit'),
+		'label'	=> 'Twitter',
     );
     foreach( $social_links as $link ) {
 		// SETTINGS
@@ -78,6 +77,7 @@ add_action( 'customize_register', 'riiskit_theme_customizer' );
 
 
 // CUSTOM CONTROLS
+
 if( class_exists( 'WP_Customize_Control' ) ):
 	/**
 	* Customize Number Control
@@ -176,16 +176,17 @@ endif;
 
 
 // SANITIZERS
+
 /**
  * Sanitize number
  *
  * @since Riiskit 1.0.0
  */
 function riiskit_sanitize_number( $value ) {
-	$value = esc_attr( $value); // clean input
-    $value = (int) $value; // Force the value into integer type.
+    $value = (int) $value;
     return ( 0 < $value ) ? $value : null;
 }
+
 /**
  * Sanitize checkbox
  *
@@ -198,8 +199,9 @@ function riiskit_sanitize_checkbox( $input ) {
         return 0;
     }
 }
+
 /**
- * Sanitize url
+ * Sanitize URL
  *
  * @since Riiskit 1.0.0
  */
@@ -207,14 +209,16 @@ function riiskit_sanitize_url( $value) {
 	$value = esc_url( $value);
 	return $value;
 }
+
 /**
- * Sanitize html
+ * Sanitize HTML
  *
  * @since Riiskit 1.0.0
  */
 function riiskit_sanitize_html( $input ) {
     return wp_kses_post($input);
 }
+
 /**
  * Sanitize color hex
  *
@@ -226,7 +230,9 @@ function riiskit_sanitize_hex_color( $color ) {
 
 	return $color;
 }
-// CUSTOM ONES
+
+// Custom ones
+
 /**
  * select: menu type
  *
@@ -255,7 +261,7 @@ function riiskit_sanitize_menu_type( $input ) {
  * @since Riiskit 1.0.0
 
 function riiskit_customize_preview_js() {
-	wp_enqueue_script( 'riiskit-customizer', get_template_directory_uri() . '/inc/admin/js/customizer.js', array( 'jquery', 'customize-preview' ), '20131205', true );
+	wp_enqueue_script( 'riiskit-customizer', get_template_directory_uri() . '/inc/admin/js/customizer.js', array( 'jquery', 'customize-preview' ), '1.0.0', true );
 }
 add_action( 'customize_preview_init', 'riiskit_customize_preview_js' );
 */
