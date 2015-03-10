@@ -1,4 +1,3 @@
-
 /*
  * This is the main script used to init stuff etc.
  *

@@ -128,7 +128,7 @@ function riiskit_stylesheets() {
 	), '1.0.1', null );
 
 	// modules/mobile-menu.css
-	wp_enqueue_style( 'riiskit-mobile-menu', get_template_directory_uri() . '/css/modules/mobile-menu.css', array(), '1.0.1', null );
+	wp_enqueue_style( 'riiskit-mobile-menu', get_template_directory_uri() . '/modules/mobile-menu/mobile-menu.css', array(), '1.0.1', null );
 
 	// utilities/helpers.css
 	wp_enqueue_style( 'riiskit-helpers', get_template_directory_uri() . '/css/utilities/helpers.css', array(), '1.0.1', null );
@@ -152,7 +152,7 @@ function riiskit_scripts() {
 	wp_enqueue_script( 'riiskit-plugins', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), '1.0.0', true );
 
 	// mobile-menu.js
-	wp_enqueue_script( 'riiskit-mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(
+	wp_enqueue_script( 'riiskit-mobile-menu', get_template_directory_uri() . '/modules/mobile-menu/mobile-menu.js', array(
 		'jquery',
 		'riiskit-plugins',
 	), '1.0.0', true );
@@ -283,18 +283,25 @@ require_once( RIISKIT_BASE . 'inc/utility-functions.php' );
 require_once( RIISKIT_BASE . 'inc/template-tags.php' );
 
 /**
- * CPTs, taxonomies etc.
- *
- * @since Riiskit 1.0.0
- */
-//require_once( RIISKIT_BASE . 'inc/admin/preset-library.php' );
-
-/**
  * Plugin filters.
  *
  * @since Riiskit 1.0.0
  */
 //require_once( RIISKIT_BASE . 'inc/plugin-filters.php' );
+
+/**
+ * Custom post types.
+ *
+ * @since Riiskit 1.0.0
+ */
+//require_once( RIISKIT_BASE . 'inc/admin/custom-post-types.php' );
+
+/**
+ * Custom logos etc.
+ *
+ * @since Riiskit 1.0.0
+ */
+//require_once( RIISKIT_BASE . 'inc/admin/customization.php' );
 
 /**
  * WP Customizer theme options.
@@ -304,17 +311,10 @@ require_once( RIISKIT_BASE . 'inc/template-tags.php' );
 require_once( RIISKIT_BASE . 'inc/admin/customizer.php' );
 
 /**
- * Custom admin logo etc.
+ * Metaboxes.
  *
- * @since Riiskit 1.0.0
+ * @since Riiskit 1.2.0
  */
-//require_once( RIISKIT_BASE . 'inc/admin/admin.php' );
-
-/**
- * User role capabilities.
- *
- * @since Riiskit 1.0.0
- */
-require_once( RIISKIT_BASE . 'inc/admin/roles.php' );
+//require_once( RIISKIT_BASE . 'inc/admin/metaboxes.php' );
 
 ?>

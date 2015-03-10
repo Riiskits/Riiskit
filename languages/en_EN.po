@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Riiskit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-05 19:31+0100\n"
+"POT-Creation-Date: 2015-03-06 15:55+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
 "Language-Team: Christoffer Riis <christoffer.riis@gmail.com>\n"
@@ -97,7 +97,67 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: ../inc/admin/admin.php:27
+#: ../inc/admin/custom-post-types.php:16
+msgctxt "reference"
+msgid "Add"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:59 ../inc/admin/custom-post-types.php:60
+msgctxt "employee"
+msgid "Employee"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:61
+msgctxt "employee"
+msgid "Add"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:62
+msgctxt "employee"
+msgid "Add employee"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:63
+msgctxt "employee"
+msgid "Edit employee"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:64
+msgctxt "employee"
+msgid "New employee"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:65
+msgctxt "employee"
+msgid "Show employee"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:66
+msgctxt "employee"
+msgid "Search for employees"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:67
+msgctxt "employee"
+msgid "No employees found"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:68
+msgctxt "employee"
+msgid "No employees in the trash"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:69
+msgctxt "employee"
+msgid "Parent employee:"
+msgstr ""
+
+#: ../inc/admin/custom-post-types.php:70
+msgctxt "employee"
+msgid "Employees"
+msgstr ""
+
+#: ../inc/admin/customization.php:27
 msgid "Go back to the website"
 msgstr ""
 
@@ -119,62 +179,6 @@ msgstr ""
 
 #: ../inc/admin/customizer.php:47
 msgid "Add links to your social profiles."
-msgstr ""
-
-#: ../inc/admin/preset-library.php:9
-msgctxt "reference"
-msgid "Add"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:52 ../inc/admin/preset-library.php:53
-#: ../inc/admin/preset-library.php:63
-msgctxt "employee"
-msgid "Employee"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:54
-msgctxt "employee"
-msgid "Add"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:55
-msgctxt "employee"
-msgid "Add employee"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:56
-msgctxt "employee"
-msgid "Edit employee"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:57
-msgctxt "employee"
-msgid "New employee"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:58
-msgctxt "employee"
-msgid "Show employee"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:59
-msgctxt "employee"
-msgid "Search for employees"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:60
-msgctxt "employee"
-msgid "No employees found"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:61
-msgctxt "employee"
-msgid "No employees in the trash"
-msgstr ""
-
-#: ../inc/admin/preset-library.php:62
-msgctxt "employee"
-msgid "Parent employee:"
 msgstr ""
 
 #: ../inc/back-compat.php:37 ../inc/back-compat.php:47

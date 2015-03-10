@@ -253,15 +253,3 @@ function riiskit_sanitize_menu_type( $input ) {
         return '';
     }
 }
-
-
-/**
- * Bind JS handlers to make Theme Customizer preview reload changes asynchronously.
- *
- * @since Riiskit 1.0.0
-
-function riiskit_customize_preview_js() {
-	wp_enqueue_script( 'riiskit-customizer', get_template_directory_uri() . '/inc/admin/js/customizer.js', array( 'jquery', 'customize-preview' ), '1.0.0', true );
-}
-add_action( 'customize_preview_init', 'riiskit_customize_preview_js' );
-*/

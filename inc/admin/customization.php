@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin customization
+ * Customize your admin area.
  *
  * @package 	Riiskit
  * @subpackage	functions.php

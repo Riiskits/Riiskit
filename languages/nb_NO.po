@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Riiskit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-05 19:31+0100\n"
+"POT-Creation-Date: 2015-03-06 15:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
 "Language-Team: Christoffer Riis <christoffer.riis@gmail.com>\n"
@@ -103,7 +103,67 @@ msgstr "Klikk på ikonet for å åpne meny"
 msgid "Menu"
 msgstr "Meny"
 
-#: ../inc/admin/admin.php:27
+#: ../inc/admin/custom-post-types.php:16
+msgctxt "reference"
+msgid "Add"
+msgstr "Legg til"
+
+#: ../inc/admin/custom-post-types.php:59 ../inc/admin/custom-post-types.php:60
+msgctxt "employee"
+msgid "Employee"
+msgstr "Ansatt"
+
+#: ../inc/admin/custom-post-types.php:61
+msgctxt "employee"
+msgid "Add"
+msgstr "Legg til"
+
+#: ../inc/admin/custom-post-types.php:62
+msgctxt "employee"
+msgid "Add employee"
+msgstr "Legg til ansatt"
+
+#: ../inc/admin/custom-post-types.php:63
+msgctxt "employee"
+msgid "Edit employee"
+msgstr "Rediger ansatt"
+
+#: ../inc/admin/custom-post-types.php:64
+msgctxt "employee"
+msgid "New employee"
+msgstr "Ny ansatt"
+
+#: ../inc/admin/custom-post-types.php:65
+msgctxt "employee"
+msgid "Show employee"
+msgstr "Vis ansatt"
+
+#: ../inc/admin/custom-post-types.php:66
+msgctxt "employee"
+msgid "Search for employees"
+msgstr "Søk etter ansatte"
+
+#: ../inc/admin/custom-post-types.php:67
+msgctxt "employee"
+msgid "No employees found"
+msgstr "Ingen ansatte funnet"
+
+#: ../inc/admin/custom-post-types.php:68
+msgctxt "employee"
+msgid "No employees in the trash"
+msgstr "Ingen ansatte i søppelkurven"
+
+#: ../inc/admin/custom-post-types.php:69
+msgctxt "employee"
+msgid "Parent employee:"
+msgstr "Forelderansatt"
+
+#: ../inc/admin/custom-post-types.php:70
+msgctxt "employee"
+msgid "Employees"
+msgstr "Ansatte"
+
+#: ../inc/admin/customization.php:27
 msgid "Go back to the website"
 msgstr "Gå tilbake til nettsiden"
 
@@ -126,62 +186,6 @@ msgstr "Sosialt"
 #: ../inc/admin/customizer.php:47
 msgid "Add links to your social profiles."
 msgstr "Legg inn lenker til dine sosiale profiler."
-
-#: ../inc/admin/preset-library.php:9
-msgctxt "reference"
-msgid "Add"
-msgstr "Legg til"
-
-#: ../inc/admin/preset-library.php:52 ../inc/admin/preset-library.php:53
-#: ../inc/admin/preset-library.php:63
-msgctxt "employee"
-msgid "Employee"
-msgstr "Ansatt"
-
-#: ../inc/admin/preset-library.php:54
-msgctxt "employee"
-msgid "Add"
-msgstr "Legg til"
-
-#: ../inc/admin/preset-library.php:55
-msgctxt "employee"
-msgid "Add employee"
-msgstr "Legg til ansatt"
-
-#: ../inc/admin/preset-library.php:56
-msgctxt "employee"
-msgid "Edit employee"
-msgstr "Rediger ansatt"
-
-#: ../inc/admin/preset-library.php:57
-msgctxt "employee"
-msgid "New employee"
-msgstr "Ny ansatt"
-
-#: ../inc/admin/preset-library.php:58
-msgctxt "employee"
-msgid "Show employee"
-msgstr "Vis ansatt"
-
-#: ../inc/admin/preset-library.php:59
-msgctxt "employee"
-msgid "Search for employees"
-msgstr "Søk etter ansatte"
-
-#: ../inc/admin/preset-library.php:60
-msgctxt "employee"
-msgid "No employees found"
-msgstr "Ingen ansatte funnet"
-
-#: ../inc/admin/preset-library.php:61
-msgctxt "employee"
-msgid "No employees in the trash"
-msgstr "Ingen ansatte i søppelkurven"
-
-#: ../inc/admin/preset-library.php:62
-msgctxt "employee"
-msgid "Parent employee:"
-msgstr "Forelderansatt"
 
 #: ../inc/back-compat.php:37 ../inc/back-compat.php:47
 #: ../inc/back-compat.php:60

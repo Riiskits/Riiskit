@@ -1,4 +1,11 @@
 <?php
+/**
+ * Custom post types (CPTs).
+ *
+ * @package		Riiskit
+ * @subpackage	functions.php
+ * @since		1.0.0
+ */
 
 // CPT without translation
 function register_riiskit_reference()
@@ -60,7 +67,7 @@ function register_riiskit_employee()
         'not_found' => _x( 'No employees found', 'employee', 'riiskit' ),
         'not_found_in_trash' => _x( 'No employees in the trash', 'employee', 'riiskit' ),
         'parent_item_colon' => _x( 'Parent employee:', 'employee', 'riiskit' ),
-        'menu_name' => _x( 'Employee', 'employee', 'riiskit' ),
+        'menu_name' => _x( 'Employees', 'employee', 'riiskit' ),
     );
 
     $args = array(

@@ -1,4 +1,12 @@
+# CodeKit #
+######################
+codekit-config.json
+.codekit
 .sass-cache
 
-.DS_Store
-.DS_Store?
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db

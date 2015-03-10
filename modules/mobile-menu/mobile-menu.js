@@ -15,6 +15,7 @@ jQuery(function ($) {
 	// Other vars
 	var menuBreakpoint = 649; // Use the same breakpoint as defined in CSS
 	var active	= false;
+
 	var nav		= $('.site-header__nav');
 	var menu	= $('.menu-primary');
 	var button	= $('.toggle-menu-btn');

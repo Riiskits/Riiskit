@@ -46,18 +46,18 @@
 
 
 
+				<div class="screenreader"><a href="#site-main"><?php _e('Skip to content', 'riiskit'); ?></a></div>
+
+				<button type="button" class="toggle-menu-btn" title="<?php _e('Toggle menu', 'riiskit'); ?>" aria-pressed="false">
+					<svg class="toggle-menu-btn__svg toggle-menu-btn__icon" width="25" height="25" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M2.4 11.833h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417zm43.2 9.667h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417zm0 14.5h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417z" fill="#000"/></svg>
+					<img src="<?php echo RIISKIT_BASE_URL; ?>img/icons/hamburger-menu.png" alt="<?php _e('Click the icon to open menu', 'riiskit'); ?>" class="toggle-menu-btn__img toggle-menu-btn__icon" width="25" height="25" />
+
+					<span class="toggle-menu-btn__title">
+						<?php _e('Menu', 'riiskit'); ?>
+					</span>
+				</button> <!-- .toggle-menu-btn -->
+
 				<nav class="site-header__nav" role="navigation">
-					<div class="screenreader"><a href="#site-main"><?php _e('Skip to content', 'riiskit'); ?></a></div>
-
-					<button type="button" class="toggle-menu-btn" title="<?php _e('Toggle menu', 'riiskit'); ?>" aria-pressed="false">
-						<svg class="toggle-menu-btn__svg toggle-menu-btn__icon" width="25" height="25" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M2.4 11.833h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417zm43.2 9.667h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417zm0 14.5h-43.2c-1.325 0-2.4 1.082-2.4 2.417 0 1.335 1.075 2.417 2.4 2.417h43.2c1.325 0 2.4-1.082 2.4-2.417 0-1.335-1.075-2.417-2.4-2.417z" fill="#000"/></svg>
-						<img src="<?php echo RIISKIT_BASE_URL; ?>img/icons/hamburger-menu.png" alt="<?php _e('Click the icon to open menu', 'riiskit'); ?>" class="toggle-menu-btn__img toggle-menu-btn__icon" width="25" height="25" />
-
-						<span class="toggle-menu-btn__title">
-							<?php _e('Menu', 'riiskit'); ?>
-						</span>
-					</button> <!-- .toggle-menu-btn -->
-
 					<?php
 					$slideout_id = '';
 					if ( 'slideout-menu' === get_option('developer_menu_type') ) {
