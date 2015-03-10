@@ -131,7 +131,7 @@ function riiskit_stylesheets() {
 	wp_enqueue_style( 'riiskit-mobile-menu', get_template_directory_uri() . '/modules/mobile-menu/mobile-menu.css', array(), '1.0.1', null );
 
 	// utilities/helpers.css
-	wp_enqueue_style( 'riiskit-helpers', get_template_directory_uri() . '/css/utilities/helpers.css', array(), '1.0.1', null );
+	wp_enqueue_style( 'riiskit-helpers', get_template_directory_uri() . '/css/utilities/helper-classes.css', array(), '1.0.1', null );
 }
 add_action( 'wp_enqueue_scripts', 'riiskit_stylesheets' );
 
