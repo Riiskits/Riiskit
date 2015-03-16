@@ -8,7 +8,9 @@ html {
   overflow-y: scroll; }
 
 html, body {
-  font: 1em/1.47 "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.47;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
   color: #636363;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;

@@ -12,7 +12,9 @@
 html { overflow-x: hidden; overflow-y: scroll; }
 
 html, body {
-	font: 1em/1.47 $base-font-primary;
+	line-height: $base-line-height;
+	font-family: $base-font-primary;
+	font-size: $base-font-size;
 	color: color(base-font);
 
 	@if $enable-font-smoothing == true {

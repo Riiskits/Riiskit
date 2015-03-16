@@ -174,6 +174,7 @@ function riiskit_get_attachment_img( $attachment_id = '', $options = array() )
 		'size'			=> 'post-thumbnail',
 		'class'			=> '',
 		'div'			=> false,
+		'return_src'	=> false,
 	), $options);
 
 	if ( '' === $attachment_id ) {
@@ -189,6 +190,8 @@ function riiskit_get_attachment_img( $attachment_id = '', $options = array() )
 
 		if ( true === $options['div'] ) {
 			return "<div $class style='background-image: url($img[0]);'></div>";
+		} elseif ( true === $options['return_src'] ) {
+			return $img_src;
 		} else {
 			return "<img $class src='$img_src' width='$img_width' height='$img_height' alt='$alt' />";
 		}
