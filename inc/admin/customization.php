@@ -61,6 +61,7 @@ add_action('wp_head', 'riiskit_adminbar_logo');
 function riiskit_login_logo() { ?>
 	<style>
 		body.login div#login h1 a {
+			width: 80px; height: 80px;
 			background-image: url('<?php echo get_template_directory_uri(); ?>/img/logo.png');
 			background-size: 80px;
 		}
