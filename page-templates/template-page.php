@@ -21,7 +21,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-		</main> <!-- .site-content -->
+		</main> <!-- .content -->
 	</div> <!-- .primary -->
 
 <?php get_footer(); ?>

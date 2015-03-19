@@ -108,8 +108,9 @@
         width: 100%;
         margin: 0;
         padding: 20px;
-        border-bottom: 1px solid #EAEAEA;
+        border-top: 1px solid #EAEAEA;
         text-align: center;
+        text-decoration: none;
         background-color: #fff; }
         .mobile-menu-type__toggle .menu-primary a:hover, .mobile-menu-type__toggle .menu-primary a:focus {
           text-decoration: none;

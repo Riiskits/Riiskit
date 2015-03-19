@@ -126,15 +126,15 @@ function riiskit_truncate_str( $string, $limit = 100, $break = " ", $pad = "…"
 endif;
 
 
-if ( ! function_exists( 'riiskit_the_excerpt' ) ) :
+if ( ! function_exists( 'riiskit_get_excerpt' ) ) :
 /**
  * Function for displaying excerpts with custom lengths.
  *
  * @since Riiskit 1.0.0
  *
- * @param integer $charlength
+ * @param integer $charlength, string $more
 */
-function riiskit_the_excerpt($charlength) {
+function riiskit_get_excerpt( $charlength = 100, $more = '&hellip;' ) {
 	$excerpt = get_the_excerpt();
 	$charlength++;
 
@@ -143,13 +143,12 @@ function riiskit_the_excerpt($charlength) {
 		$exwords = explode( ' ', $subex );
 		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
 		if ( $excut < 0 ) {
-			echo mb_substr( $subex, 0, $excut );
+			return mb_substr( $subex, 0, $excut ) . $more;
 		} else {
-			echo $subex;
+			return $subex . $more;
 		}
-		echo '&hellip;';
 	} else {
-		echo $excerpt;
+		return $excerpt;
 	}
 }
 endif;
