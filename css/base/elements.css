@@ -3,14 +3,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
 html, body {
+  overflow-x: hidden;
+  overflow-y: scroll;
   line-height: 1.47;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #636363;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -24,15 +22,12 @@ a {
   a:visited {
     color: #4122a6; }
   a:hover {
-    color: #06e;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #06e; }
   a:focus {
     outline: thin dotted; }
   a:hover, a a:active {
     outline: 0; }
-
-img {
-  border: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 36px 0 12px;
@@ -66,12 +61,11 @@ hr {
   border-top: 1px solid #ccc; }
 
 img {
-  vertical-align: middle;
+  width: auto\9;
+  /* IE8 */
   max-width: 100%;
-  height: auto; }
-
-.ie8 img {
-  width: auto; }
+  height: auto;
+  border: 0; }
 
 embed, iframe, object, video {
   margin-bottom: 24px;
@@ -89,11 +83,11 @@ input[type="submit"], input[type="reset"], input[type="button"], button {
   cursor: pointer; }
 
 textarea {
-  resize: vertical;
-  border-radius: 0; }
+  resize: vertical; }
 
-input, textarea {
-  /* Removing the inner shadow, rounded corners on iOS inputs */
+input, button, textarea {
+  /* Removing the inner shadow and rounded corners on iOS inputs */
+  border-radius: 0;
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); }
 
 /* End: forms */

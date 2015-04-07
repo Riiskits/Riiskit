@@ -116,7 +116,7 @@ endif;
  */
 function riiskit_stylesheets() {
 	// utilities/normalize.css
-	wp_enqueue_style( 'riiskit-normalize', get_template_directory_uri() . '/css/utilities/normalize.css', array(), '3.0.2', null );
+	wp_enqueue_style( 'riiskit-normalize', get_template_directory_uri() . '/css/utilities/normalize.css', array(), '3.0.3', null );
 
 	// base/elements.css
 	wp_enqueue_style( 'riiskit-elements', get_template_directory_uri() . '/css/base/elements.css', array(), '1.0.1', null );

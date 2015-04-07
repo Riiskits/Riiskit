@@ -6,12 +6,13 @@
 
 
 
-*, *:before, *:after { @include box-sizing(border-box); }
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
 
-
-html { overflow-x: hidden; overflow-y: scroll; }
 
 html, body {
+	overflow-x: hidden; overflow-y: scroll;
 	line-height: $base-line-height;
 	font-family: $base-font-primary;
 	font-size: $base-font-size;
@@ -32,14 +33,20 @@ p { margin: 0 0 24px 0; }
 a {
 	color: color(base-link);
 
-	&:visited { color: #4122a6; }
-	&:hover { color: #06e; text-decoration: none; }
-	&:focus { outline: thin dotted; }
-	&:hover, a:active { outline: 0; }
+	&:visited {
+		color: #4122a6;
+	}
+	&:hover {
+		text-decoration: none;
+		color: #06e;
+	}
+	&:focus {
+		outline: thin dotted;
+	 }
+	&:hover, a:active {
+		outline: 0;
+	}
 }
-
-
-img { border: 0; }
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,9 +72,12 @@ hr {
 }
 
 
-img { vertical-align: middle; max-width: 100%; height: auto; }
-
-.ie8 img { width: auto; }
+img {
+	width: auto\9; /* IE8 */
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
 
 
 embed, /* fluid cropping doesn't work in IE8 without hack */
@@ -89,7 +99,6 @@ video {
 
 
 /* Start: forms */
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -110,23 +119,30 @@ button {
 
 textarea {
 	resize: vertical;
-	border-radius: 0;
 }
 
 
 input,
-textarea { /* Removing the inner shadow, rounded corners on iOS inputs */
+button,
+textarea { /* Removing the inner shadow and rounded corners on iOS inputs */
+	border-radius: 0;
 	background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
-
 /* End: forms */
 
 
-table { width: 100%; margin-bottom: 24px; }
+table {
+	width: 100%; margin-bottom: 24px;
+}
 
-	th, caption { border-width: 0 1px 1px 0; font-weight: bold; }
+	th, caption {
+		border-width: 0 1px 1px 0;
+		font-weight: bold;
+	}
 
-		td { border-width: 0 1px 1px 0; }
+		td {
+			border-width: 0 1px 1px 0;
+		}
 
 
 dl { margin-bottom: 24px; }

@@ -8,19 +8,18 @@
  * @since Riiskit 1.0.0
  */
 ?>
-<!DOCTYPE html>
-<!--[if IE 8]>         <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<link rel="shortcut icon" href="<?php echo RIISKIT_BASE_URL . 'favicon.ico'; ?>" type="image/x-icon">
-	<link rel="apple-touch-icon" href="<?php echo RIISKIT_BASE_URL . 'apple-touch-icon-precomposed.png'; ?>">
+	<link rel="apple-touch-icon" href="<?php echo RIISKIT_BASE_URL . 'apple-touch-icon.png'; ?>">
 
 	<?php wp_head(); ?>
 </head>
@@ -28,7 +27,7 @@
 <body <?php body_class(); ?>>
 
 	<!--[if lt IE 8]>
-		<p class="browsehappy"><a href="http://browsehappy.com/" target="_blank"><?php _e('You are using an outdated, slow and unsecure browser. Please upgrade to improve your experience.', 'riiskit'); ?></a></p>
+		<p class="browserupgrade"><a href="http://browsehappy.com/" target="_blank"><?php _e('You are using an outdated, slow and unsecure browser. Please upgrade to improve your experience.', 'riiskit'); ?></a></p>
 	<![endif]-->
 
 

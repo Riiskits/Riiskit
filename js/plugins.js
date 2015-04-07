@@ -11,7 +11,7 @@
  * @since Riiskit 1.0.0
  */
 
-(function () {
+(function() {
     var method;
     var noop = function () {};
     var methods = [

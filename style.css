@@ -4,23 +4,23 @@ Theme URI: https://github.com/Chrisriis/Riiskit
 Author: Christoffer Riis
 Author URI: no.linkedin.com/in/christofferiis
 Description: A developer theme; based on Twenty Fifteen, HTML5 boilerplate and SMACSS.
-Version: 1.3.0
+Version: 1.4.0
 Text Domain: riiskit
 Domain Path: /languages/
 */
 /*------------------------------------*\
     #BROWSE HAPPY PROMT
 \*------------------------------------*/
-.browsehappy {
+.browserupgrade {
   padding: 10px;
   text-align: center;
   font-size: 1em;
   font-weight: 700;
   background: #000; }
-  .browsehappy a {
+  .browserupgrade a {
     text-decoration: none;
     color: #a4baee; }
-    .browsehappy a:hover {
+    .browserupgrade a:hover {
       text-decoration: underline; }
 
 /*------------------------------------*\
