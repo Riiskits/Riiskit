@@ -6,6 +6,7 @@ Don't mistake it for a theme framework. It's just a simple, yet powerful and hig
 
 ##Notes
 * To enable the mobile menu, you must first pick a choice in the "Appearence -> Customize".
+* A coming version of _libsass_ will allow me to compile the CSS files with output style _expanded_. This will make it easier for CSS coders to edit the files.
 
 ##Features
 * SASS, OOCSS, BEM and SMACSS
