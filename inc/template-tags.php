@@ -179,8 +179,7 @@ function riiskit_get_attachment_img( $attachment_id = '', $options = array() )
 	if ( '' === $attachment_id ) {
 		return;
 	} else {
-		$attachment		= get_post( absint($attachment_id) );
-		$alt			= esc_attr( get_post_meta($attachment->ID, '_wp_attachment_image_alt', true) );
+		$alt			= esc_attr( get_post_meta($attachment_id, '_wp_attachment_image_alt', true) );
 		$img			= wp_get_attachment_image_src( $attachment_id, $options['size'] );
 		$img_src		= esc_attr( $img[0] );
 		$img_width		= absint( $img[1] );
