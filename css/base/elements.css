@@ -1,6 +1,4 @@
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -67,25 +65,42 @@ img {
   height: auto;
   border: 0; }
 
-embed, iframe, object, video {
+embed, iframe,
+object,
+video {
   margin-bottom: 24px;
   max-width: 100%; }
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle; }
 
 /* Start: forms */
-input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], input[type="password"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="password"] {
   -webkit-appearance: none !important; }
 
-input[type="submit"], input[type="reset"], input[type="button"], button {
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
   border: 0;
   cursor: pointer; }
 
 textarea {
   resize: vertical; }
 
-input, button, textarea {
+input,
+button,
+textarea {
   /* Removing the inner shadow and rounded corners on iOS inputs */
   border-radius: 0;
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); }
@@ -114,16 +129,23 @@ dd {
 ul, ol {
   margin: 0 0 24px 20px; }
 
-li > ul, li > ol {
+li > ul,
+li > ol {
   margin: 0 0 0 20px; }
 
-nav ul, nav ol {
+nav ul,
+nav ol {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-image: none; }
 
-code, kbd, tt, var, samp, pre {
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
   font-family: monospace, serif;
   -webkit-hyphens: none;
   -moz-hyphens: none;
