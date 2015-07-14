@@ -10,9 +10,10 @@
 	box-sizing: border-box;
 }
 
+html { overflow-y: scroll; }
 
 html, body {
-	overflow-x: hidden; overflow-y: scroll;
+	overflow-x: hidden;
 	line-height: $base-line-height;
 	font-family: $base-font-primary;
 	font-size: $base-font-size;

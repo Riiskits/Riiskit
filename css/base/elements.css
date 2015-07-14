@@ -1,9 +1,11 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  overflow-y: scroll; }
+
 html, body {
   overflow-x: hidden;
-  overflow-y: scroll;
   line-height: 1.47;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
