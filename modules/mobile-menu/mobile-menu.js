@@ -72,29 +72,25 @@ jQuery(function ($) {
 			menu.attr('id', 'rk-slideout');
 
 
-			// Config
+            // Config, and adding / removing click outside listener for closing
             button.sidr({
                 name: sidrSelector,
                 side: 'right',
                 onOpen: function(){
                     sidrIsOpen = true;
                     button.attr('aria-pressed', 'true');
+                    // Add listener for clicks outside the menu when open
+                    $.selector_cache('.site-header, .site-main, .site-footer').on('click.riiskit', function() {
+                        $.sidr('close', sidrSelector);
+                        button.attr('aria-pressed', 'false');
+                    });
                 },
                 onClose: function(){
                     sidrIsOpen = false;
                     button.attr('aria-pressed', 'false');
+                     $.selector_cache('.site-header, .site-main, .site-footer').off('click.riiskit');
                 },
                 displace: false,
-            });
-
-
-            // Closing sidr
-
-            // clicked outside sidr
-            $.selector_cache('.site-header, .site-main, .site-footer').on('click.riiskit', function() {
-                $.sidr('close', sidrSelector);
-
-                button.attr('aria-pressed', 'false');
             });
 
             // resized window past the breakpoint
