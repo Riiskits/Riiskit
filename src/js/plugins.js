@@ -1,6 +1,6 @@
 
 /**
- * Small plugins
+ * Small helper plugins
  *
  * @since Riiskit 1.0.0
  */
@@ -11,7 +11,7 @@
  * @since Riiskit 1.0.0
  */
 
-(function() {
+( function(){
     var method;
     var noop = function () {};
     var methods = [
@@ -35,7 +35,7 @@
 
 
 /**
- * Better way to cache jQuery selectors
+ * Better way to cache jQuery selectors.
  *
  * Usage: $.selector_cache('.element');
  *
@@ -45,7 +45,7 @@
  * @since Riiskit 1.0.0
  */
 
-(function ($) {
+( function ($){
 	$.selector_cache = function (selector) {
 		if ( ! $.selector_cache[selector] ) {
 			$.selector_cache[selector] = $(selector);
@@ -65,7 +65,7 @@
  * @since Riiskit 1.0.0
  */
 
-(function () {
+( function (){
 	var ua = navigator.userAgent.toLowerCase();
 
 	if ( ( ua.indexOf( 'webkit' ) > -1 || ua.indexOf( 'opera' ) > -1 || ua.indexOf( 'msie' ) > -1 ) &&
