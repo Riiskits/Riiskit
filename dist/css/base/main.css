@@ -34,42 +34,35 @@
       display: block;
       float: left; }
 
-@media screen and (max-width: 649px) {
-  .site-header__inner {
-    width: 100%;
-    /*a*/ }
-    .site-header__inner__logo {
-      margin-left: 5%; } }
-
 /*------------------------------------*    #PRIMARY MENU
 \*------------------------------------*/
 /*nav*/
 .site-header__nav {
   float: right;
-  text-align: right;
-  /*li*/ }
+  text-align: right; }
   .site-header__nav a {
-    display: block;
-    margin-left: 40px;
-    text-decoration: none;
-    color: #000; }
+    text-decoration: none; }
     .site-header__nav a:hover {
       text-decoration: underline; }
-  .site-header__nav .current_page_item a,
-  .site-header__nav .current-menu-item a {
-    text-decoration: underline; }
-
-@media screen and (max-width: 649px) {
-  /*nav*/
-  .site-header__nav {
-    margin-right: 5%; } }
 
 /*ul*/
 .menu-primary {
-  float: right; }
+  /*li*/ }
   .menu-primary li {
     display: block;
     float: left; }
+  .menu-primary a {
+    display: block;
+    margin-left: 40px;
+    color: #000; }
+    .menu-primary a:visited {
+      color: #000; }
+  .menu-primary .current_page_item a,
+  .menu-primary .current-menu-item a {
+    text-decoration: underline; }
+
+.toggle-menu-btn {
+  display: none; }
 
 /*------------------------------------*    #MAIN CONTENT
 \*------------------------------------*/
