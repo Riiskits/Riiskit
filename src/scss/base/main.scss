@@ -37,7 +37,8 @@
 
 	&__inner {
 		@include rk-container--main;
-		height: $header-height; line-height: $header-height;
+		height: $header-height;
+		line-height: $header-height;
 
 		/*a*/&__logo {
 			display: block;
@@ -70,13 +71,14 @@
 	float: right;
 	text-align: right;
 
-	li {
-		a {
-			margin-left: 40px;
-			text-decoration: none;
-			color: #000;
+	a {
+		display: block;
+		margin-left: 40px;
+		text-decoration: none;
+		color: #000;
 
-			&:hover { text-decoration: underline; }
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 
@@ -95,8 +97,12 @@
 }
 
 	/*ul*/.menu-primary {
-		@include rk-nav;
 		float: right;
+
+		li {
+			display: block;
+			float: left;
+		}
 	}
 
 

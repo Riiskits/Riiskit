@@ -5,11 +5,13 @@
 
 
 
-/*btn*/.toggle-menu-btn {
+.toggle-menu-btn {
 	display: none;
-}
 
-	.toggle-menu-btn__title { @include screenreader; }
+	&__title {
+		@include screenreader;
+	}
+}
 
 
 
@@ -17,62 +19,78 @@
 
 @include bp(mobile-menu) {
 
-	/*------------------------------------*\
-    #MOBILE MENU
-	\*------------------------------------*/
+	/*a*/.logo {
+		margin-left: 5%;
+	}
 
 
-	/*body*/.mobile-menu {
+	/*nav*/.site-header__nav {
+		float: none;
+		width: 100%; height: auto;
 
-		/*a*/.logo { margin-left: 5%; }
+		li { margin-left: 0; }
+	}
 
+		.toggle-menu-btn {
+			position: relative;
+			display: block;
+			float: right;
+			width: 33px; height: $header-height;
+			margin-right: 5%;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			background-color: transparent;
 
-		/*nav*/.site-header__nav {
-			float: none;
-			width: 100%; height: auto;
-
-			li { margin-left: 0; }
+			&__title {
+				margin-top: -4px;
+				font-size: 14px;
+			}
 		}
 
-			/*button*/.toggle-menu-btn {
-				position: relative;
-				display: block;
-				float: right;
-				width: 33px; height: $header-height;
-				margin-right: 5%; padding: 0;
-				border: 0;
-				outline: 0;
-				background-color: transparent;
+			.line {
+				position: relative; top: 0;
+			    display: block;
+			    width: 33px; height: 4px;
+			    border-radius: 2px;
+			    @include transform(rotate(0));
+			    background-color: #000;
+			    @include transition(0.3s);
+
+			    &:nth-child(2) { top: 4px; }
+				&:nth-child(3) { top: 8px; }
 			}
 
-				.toggle-menu-btn__icon {
-					position: absolute;
-					top: 50%; bottom: 50%; left: 0;
-					margin: auto;
-				}
+		.toggle-menu-btn.active {
 
-				/*img*/.toggle-menu-btn__img { display: none; }
-
-				.toggle-menu-btn__title { margin-top: -4px; font-size: 14px; }
-
-
-			/*ul*/.menu-primary {
-				display: none;
-				z-index: 100;
-				line-height: 1.47;
-			}
-			/*ul*/.menu-primary.active { display: block; }
-	}
+		    .line:nth-child(1) {
+		    	top: 4px;
+		        @include transform(rotate(-45deg));
+		    }
+		    /* middle line */
+		    .line:nth-child(2) {
+		    	opacity: 0;
+		   	}
+		    /* bottom line */
+		    .line:nth-child(3) {
+		    	top: -4px;
+		        @include transform(rotate(45deg));
+		    }
+		}
 
 
-	/*body*/.no-svg {
-		/*svg*/.toggle-menu-btn__svg { display: none; }
-		/*img*/.toggle-menu-btn__img { display: block; }
-	}
+		/*ul*/.menu-primary {
+			display: none;
+			z-index: 100;
+			line-height: 1.47;
+		}
+		/*ul*/.menu-primary.active {
+			display: block;
+		}
 
 
 	/*body*/.no-js {
-	    /*button*/.toggle-menu-btn {
+	    .toggle-menu-btn {
 		    display: none;
 		}
 
@@ -91,36 +109,36 @@
 	\*------------------------------------*/
 
 
-	/*body*/.mobile-menu-type__toggle {
+	/*nav*/.site-header__nav {
+		text-align: center;
 
-		/*nav*/.site-header__nav {
-			text-align: center;
-
-			/*li*/.current_page_item a,
-			/*li*/.current-menu-item a {
-				background-color: #eee;
-			}
+		/*li*/.current_page_item a,
+		/*li*/.current-menu-item a {
+			background-color: #eee;
 		}
+	}
 
-			/*ul*/.menu-primary {
-				position: relative;
+		/*ul*/.menu-primary {
+			position: relative;
+			width: 100%;
+
+			li { float: none }
+
+			a {
 				width: 100%;
-				@include rk-nav--stacked;
+				margin: 0;
+				padding: 20px;
+				border-top: 1px solid #EAEAEA;
+				text-align: center;
+				text-decoration: none;
+				background-color: #fff;
 
-				a {
-					width: 100%;
-					margin: 0; padding: 20px;
-					border-top: 1px solid #EAEAEA;
-					text-align: center;
+				&:hover,
+				&:focus {
 					text-decoration: none;
-					background-color: #fff;
-
-					&:hover, &:focus {
-						text-decoration: none;
-						background-color: #eee;
-					}
+					background-color: #eee;
 				}
 			}
-	}
+		}
 
 }
