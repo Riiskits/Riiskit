@@ -22,6 +22,3 @@ Then just wait a while for the packages to install and voila!
 * WP Customizer settings for common usage.
 * IE8+.
 * Vanilla, semantic, accessible, neatly organized and well documented code.
-
-## Coming very soon
-Riiskit Child: A child theme for Riiskit.
