@@ -1,8 +1,9 @@
-# CodeKit #
-######################
-codekit-config.json
-.codekit
-.sass-cache
+
+node_modules
+LICENCE.MD
+*.sketch
+*.log
+*.map
 
 # OS generated files #
 ######################

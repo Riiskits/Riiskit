@@ -1,0 +1,32 @@
+
+// ====== VARIABLES ======
+
+
+// Enable font smoothing?
+$enable-font-smoothing: true !default;
+
+
+// Sizes
+$container-width:		90% !default;
+$container-max-width:	1170px !default;
+$header-height:			150px !default;
+
+
+// Line heights
+$base-line-height:     	1.47 !default;
+
+
+// Font sizes
+$base-font-size:     	14px !default;
+
+
+// Colors
+$colors: (
+	base-font:    #636363,
+	base-heading: #000,
+	base-link:    #3496ED,
+);
+
+// Base font-family
+$base-font-primary: "Open Sans", Helvetica, Arial, sans-serif !default;
+$base-font-secondary: "Cantata One", "Times, Times New Roman", serif !default;

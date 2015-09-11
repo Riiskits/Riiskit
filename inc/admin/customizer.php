@@ -2,6 +2,8 @@
 /**
  * Implement Theme Customizer additions and adjustments.
  *
+ * The sanitiser functions are found in "inc/utility-functions.php".
+ *
  * @package		Riiskit
  * @subpackage	functions.php
  * @since		1.0.0
@@ -13,32 +15,6 @@ function riiskit_theme_customizer( $wp_customize ) {
 	$wp_customize->remove_section( 'colors' );
 	$wp_customize->remove_section( 'background_image' );
 	$wp_customize->remove_section( 'static_front_page' );
-
-
-	// MOBILE
-	// Mobile sidr.js menu on/off
-	$wp_customize->add_section('developer' , array(
-		'title' => __('Developer', 'riiskit'),
-		'priority'    => 2,
-		'description' => __( 'Options for the developer.', 'riiskit' ),
-	) );
-	// toggle/slideout selection
-	$wp_customize->add_setting('developer_menu_type', array(
-		'default' => 'toggle-menu',
-		'type' => 'option',
-		'capability' => 'activate_plugins',
-		'sanitize_callback', 'riiskit_sanitize_menu_type',
-	) );
-	$wp_customize->add_control('developer_menu_type', array(
-		'label'      => __('Menutype', 'riiskit'),
-		'section'    => 'developer',
-		'settings'   => 'developer_menu_type',
-		'type' => 'select',
-		'choices' => array(
-            'toggle-menu' => 'Toggle',
-            'slideout-menu' => 'Slideout',
-        ),
-	) );
 
 
 	// SOCIAL
@@ -173,83 +149,3 @@ if( class_exists( 'WP_Customize_Control' ) ):
 	   }
     }
 endif;
-
-
-// SANITIZERS
-
-/**
- * Sanitize number
- *
- * @since Riiskit 1.0.0
- */
-function riiskit_sanitize_number( $value ) {
-    $value = (int) $value;
-    return ( 0 < $value ) ? $value : null;
-}
-
-/**
- * Sanitize checkbox
- *
- * @since Riiskit 1.0.0
- */
-function riiskit_sanitize_checkbox( $input ) {
-    if ( $input === true ) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-/**
- * Sanitize URL
- *
- * @since Riiskit 1.0.0
- */
-function riiskit_sanitize_url( $value) {
-	$value = esc_url( $value);
-	return $value;
-}
-
-/**
- * Sanitize HTML
- *
- * @since Riiskit 1.0.0
- */
-function riiskit_sanitize_html( $input ) {
-    return wp_kses_post($input);
-}
-
-/**
- * Sanitize color hex
- *
- * @since Riiskit 1.0.0
- */
-function riiskit_sanitize_hex_color( $color ) {
-	if ( $unhashed = sanitize_hex_color_no_hash( $color ) )
-		return '#' . $unhashed;
-
-	return $color;
-}
-
-// Custom ones
-
-/**
- * select: menu type
- *
- * @since Riiskit 1.0.0
- *
- * @param array $input.
- * return array Valid options.
- */
-function riiskit_sanitize_menu_type( $input ) {
-    $valid = array(
-        'toggle-menu' => 'Toggle',
-        'slideout-menu' => 'Slideout',
-    );
-
-    if ( array_key_exists( $input, $valid ) ) {
-        return $input;
-    } else {
-        return '';
-    }
-}
