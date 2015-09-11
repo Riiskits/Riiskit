@@ -1,0 +1,1197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Riiskit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-06 15:56+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Christoffer Riis <christoffer.riis@gmail.com>\n"
+"Language-Team: Christoffer Riis <christoffer.riis@gmail.com>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_ex:1,2c;_n_noop:1,2;"
+"_nx_noop:1,2;esc_attr_e;esc_attr_;esc_html_e;esc_html_\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:19
+msgid "Page not found"
+msgstr "Fant ikke siden"
+
+#: ../404.php:27 ../content-none.php:42
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. The page has "
+"probably been moved or deleted."
+msgstr ""
+"Vi kan dessverre ikke finne det du leter etter. Siden har sannsynligvis "
+"blitt flyttet eller slettet."
+
+#: ../content-none.php:17
+msgid "Nothing Found"
+msgstr "Ingen treff"
+
+#: ../content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klar for å publisere ditt første innlegg? <a href=”%1$s”>Kom i gang her</a>."
+
+#: ../content-none.php:34
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Beklager, men ingenting passet med dine søkeord. Vær snill og prøv igjen med "
+"andre søkeord."
+
+#: ../content-page.php:28 ../content.php:49
+msgid "Pages:"
+msgstr "Sider:"
+
+#: ../content-page.php:32 ../content.php:53 ../index.php:35 ../search.php:37
+msgid "Page"
+msgstr "﻿Side"
+
+#: ../content.php:44
+#, php-format
+msgid "Continue reading %s"
+msgstr "Fortsett og les %s"
+
+#: ../footer.php:19
+msgid "Copyright"
+msgstr "Opphavsrett"
+
+#: ../footer.php:23
+msgid "Made by "
+msgstr "Laget av"
+
+#: ../functions.php:72
+msgid "Primary menu, typically used in the header etc."
+msgstr "Hovedmeny, oftest brukt i headeren/topp."
+
+#: ../header.php:31
+msgid ""
+"You are using an outdated, slow and unsecure browser. Please upgrade to "
+"improve your experience."
+msgstr ""
+"Du bruker en utdatert, treg og usikker nettleser. Vær snill og oppgrader for "
+"en bedre opplevelse."
+
+#: ../header.php:43
+msgid "Click to visit homepage"
+msgstr "Trykk for å besøke forsiden"
+
+#: ../header.php:50
+msgid "Skip to content"
+msgstr "Skipp til innhold"
+
+#: ../header.php:52
+msgid "Toggle menu"
+msgstr "Vekslingsmeny"
+
+#: ../header.php:54
+msgid "Click the icon to open menu"
+msgstr "Klikk på ikonet for å åpne meny"
+
+#: ../header.php:57
+msgid "Menu"
+msgstr "Meny"
+
+#: ../inc/admin/custom-post-types.php:16
+msgctxt "reference"
+msgid "Add"
+msgstr "Legg til"
+
+#: ../inc/admin/custom-post-types.php:59 ../inc/admin/custom-post-types.php:60
+msgctxt "employee"
+msgid "Employee"
+msgstr "Ansatt"
+
+#: ../inc/admin/custom-post-types.php:61
+msgctxt "employee"
+msgid "Add"
+msgstr "Legg til"
+
+#: ../inc/admin/custom-post-types.php:62
+msgctxt "employee"
+msgid "Add employee"
+msgstr "Legg til ansatt"
+
+#: ../inc/admin/custom-post-types.php:63
+msgctxt "employee"
+msgid "Edit employee"
+msgstr "Rediger ansatt"
+
+#: ../inc/admin/custom-post-types.php:64
+msgctxt "employee"
+msgid "New employee"
+msgstr "Ny ansatt"
+
+#: ../inc/admin/custom-post-types.php:65
+msgctxt "employee"
+msgid "Show employee"
+msgstr "Vis ansatt"
+
+#: ../inc/admin/custom-post-types.php:66
+msgctxt "employee"
+msgid "Search for employees"
+msgstr "Søk etter ansatte"
+
+#: ../inc/admin/custom-post-types.php:67
+msgctxt "employee"
+msgid "No employees found"
+msgstr "Ingen ansatte funnet"
+
+#: ../inc/admin/custom-post-types.php:68
+msgctxt "employee"
+msgid "No employees in the trash"
+msgstr "Ingen ansatte i søppelkurven"
+
+#: ../inc/admin/custom-post-types.php:69
+msgctxt "employee"
+msgid "Parent employee:"
+msgstr "Forelderansatt"
+
+#: ../inc/admin/custom-post-types.php:70
+msgctxt "employee"
+msgid "Employees"
+msgstr "Ansatte"
+
+#: ../inc/admin/customization.php:27
+msgid "Go back to the website"
+msgstr "Gå tilbake til nettsiden"
+
+#: ../inc/admin/customizer.php:21
+msgid "Developer"
+msgstr "Utvikler"
+
+#: ../inc/admin/customizer.php:23
+msgid "Options for the developer."
+msgstr "Innstillinger for utvikler/e."
+
+#: ../inc/admin/customizer.php:33
+msgid "Menutype"
+msgstr "Menystil"
+
+#: ../inc/admin/customizer.php:46
+msgid "Social"
+msgstr "Sosialt"
+
+#: ../inc/admin/customizer.php:47
+msgid "Add links to your social profiles."
+msgstr "Legg inn lenker til dine sosiale profiler."
+
+#: ../inc/back-compat.php:37 ../inc/back-compat.php:47
+#: ../inc/back-compat.php:60
+#, php-format
+msgid ""
+"Riiskit requires at least WordPress version 4.1. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+"Riiskit krever ihvertfall WordPress versjon 4.1. Du kjører nå versjon %s. "
+"Vær snill og oppgrader og prøv igjen."
+
+#: ../inc/template-tags.php:242
+msgctxt "Used before updated date."
+msgid "Updated"
+msgstr "﻿Oppdatert"
+
+#: ../inc/template-tags.php:248
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Publisert"
+
+#: ../inc/template-tags.php:258
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Skribent"
+
+#: ../inc/template-tags.php:265 ../inc/template-tags.php:274
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ","
+
+#: ../inc/template-tags.php:268
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Kategorier"
+
+#: ../inc/template-tags.php:277
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Merkelapper"
+
+#: ../index.php:33 ../search.php:35
+msgid "Previous page"
+msgstr "Forrige side"
+
+#: ../index.php:34 ../search.php:36
+msgid "Next page"
+msgstr "Neste side"
+
+#: ../search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Søkeresultater for: %s"
+
+#: ../searchform.php:12
+msgid "Search"
+msgstr "Søk"
+
+#: ../single.php:23
+msgid "Next post:"
+msgstr "Neste innlegg:"
+
+#: ../single.php:25
+msgid "Previous post:"
+msgstr "Forrige innlegg:"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#, fuzzy
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Mobile Sidebar"
+#~ msgstr "Mobil Sidestolpe"
+
+#~ msgid "Slideout sidebar for mobile devices. Put your navigation etc. here."
+#~ msgstr ""
+#~ "Slideout sidestolpe for mobile enheter. Plasser navigasjonen din etc. her."
+
+#~ msgctxt "Cantata One font: on or off"
+#~ msgid "on"
+#~ msgstr "på"
+
+#~ msgid "Next"
+#~ msgstr "Neste"
+
+#~ msgid "Previous"
+#~ msgstr "Forrige"
+
+#~ msgid "Slideout Placement"
+#~ msgstr "Slideout Plassering"
+
+#~ msgid "Right"
+#~ msgstr "Høyre"
+
+#~ msgid "Left"
+#~ msgstr "Venstre"
+
+#~ msgid "Footer"
+#~ msgstr "Footer / Bunn"
+
+#~ msgid "Write some text that will show in your footer (e.g. copyright)."
+#~ msgstr ""
+#~ "Skriv noe tekst som vil vises i bunnen av nettsiden din (f.eks. "
+#~ "opphavsrettigheter)."
+
+#~ msgid "Footer text"
+#~ msgstr "Footer tekst"
+
+#~ msgid "Google+ link"
+#~ msgstr "Google+ link"
+
+#~ msgid "Instagram link"
+#~ msgstr "Instagram link"
+
+#~ msgid "YouTube link"
+#~ msgstr "YouTube link"
+
+#~ msgid "Dribble link"
+#~ msgstr "Dribble link"
+
+#~ msgid "Github link"
+#~ msgstr "Github link"
+
+#~ msgid "Featured"
+#~ msgstr "Fremhevet"
+
+#~ msgctxt "Used before post format."
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgctxt "Used before full size attachment link."
+#~ msgid "Full size"
+#~ msgstr "Fullstørrelse"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Etterlat en kommentar"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Kommentar"
+
+#~ msgid "% Comments"
+#~ msgstr "% Kommentarer"
+
+#~ msgid "Mobile menu in slideout sidebar"
+#~ msgstr "Mobilmeny i slideout sidestolpe"
+
+#~ msgid "Mobile Optimizations"
+#~ msgstr "Mobiloptimalisering"
+
+#~ msgid ""
+#~ "Choose between an ordinary toggle menu and a widget-ready slideout/off-"
+#~ "canvas menu. If you just want to show your navigation, a toggle menu will "
+#~ "probably be sufficient, but if you need a search form, social buttons "
+#~ "etc. then you need the slideout menu."
+#~ msgstr ""
+#~ "Velg mellom en standard vekslingsmeny eller en widget-klar slideout/off-"
+#~ "canvas meny. Hvis du kun ønsker å vise navigasjonen din, så er en "
+#~ "standard vekslingsmeny anbefalt, men dersom du også vil ha en søkeboks, "
+#~ "link til FB etc. så må du velge slideout menyen."
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Kategori Arkiver: %s"
+
+#~ msgctxt "comments title"
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "1 kommentar til &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s kommentarer til &ldquo;%2$s&rdquo;"
+
+#~ msgid "Comment navigation"
+#~ msgstr "Kommentar navigasjon"
+
+#~ msgid "&larr; Older Comments"
+#~ msgstr "&larr; Eldre Kommentarer"
+
+#~ msgid "Newer Comments &rarr;"
+#~ msgstr "Nyere Kommentarer &rarr;"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Kommentarer er lukket."
+
+#~ msgid "This entry was tagged %2$s."
+#~ msgstr "Dette innlegget ble tagget med %2$s."
+
+#~ msgid "This entry was posted in %1$s and tagged %2$s."
+#~ msgstr "Dette innlegget ble publisert i %1$s med stikkordene %2$s."
+
+#~ msgid "This entry was posted in %1$s."
+#~ msgstr "Dette innlegget ble publisert i %1$s."
+
+#~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Les videre <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid ", "
+#~ msgstr ","
+
+#~ msgid "Tags: %1$s"
+#~ msgstr "Stikkord: %1$s"
+
+#~ msgid "To view this protected post, enter the password below:"
+#~ msgstr ""
+#~ "For å få tilgang til innlegget, vennligst skriv inn passordet nedenfor:"
+
+#~ msgid "Password:"
+#~ msgstr "Passord:"
+
+#~ msgctxt "Abril Fatface font: on or off"
+#~ msgid "on"
+#~ msgstr "på"
+
+#~ msgid "General"
+#~ msgstr "Generelt"
+
+#~ msgid "These are the general settings."
+#~ msgstr "Dette er de generelle innstillingene."
+
+#~ msgid "Retina graphics (disable if you use a plugin for this)"
+#~ msgstr "Retina grafikk (deaktiver hvis du bruker et innstikk for dette)"
+
+#~ msgid "Menu Breakpoint (when it should show)"
+#~ msgstr "Meny Stoppunkt (når den skal vises)"
+
+#~ msgid "Favicon & Touchicon"
+#~ msgstr "Favikon og Touchikon"
+
+#~ msgid ""
+#~ "You can upload your own icons if you don't want to use the default ones."
+#~ msgstr ""
+#~ "Du kan laste opp dine egne ikoner hvis du ikke ønsker å bruke standard "
+#~ "ikonene."
+
+#~ msgid "Favicon (format: .ico | size: 64x64 or use Icon Slate)"
+#~ msgstr "Favikon (format: .ico | størrelse: 64x64 eller bruk Icon Slate)"
+
+#~ msgid "Touchicon (format: .png | size: 152x152)"
+#~ msgstr "Touchikon (format: .png | størrelse: 152x152)"
+
+#~ msgid "Header"
+#~ msgstr "Header / Topp"
+
+#~ msgid "Upload a logo, use a fixed/scrolling header etc."
+#~ msgstr "Last opp en logo, bruk en fast/skrollende header etc."
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Admin Logo"
+#~ msgstr "Admin Logo"
+
+#~ msgid ""
+#~ "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match "
+#~ "the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
+#~ msgstr ""
+#~ "Bruk et <a href=\"%1$s\">stikkord</a> til å fremheve innleggene dine. "
+#~ "Hvis ingen innlegg passer til stikkordet, <a href=\"%2$s\">så vil "
+#~ "klebrige innlegg</a> bli vist istedenfor."
+
+#~ msgid "Layout"
+#~ msgstr "Layout"
+
+#~ msgid "Slider"
+#~ msgstr "Slider"
+
+#~ msgid "Number of posts for slider"
+#~ msgstr "Antall innlegg i lysbildefremvisning"
+
+#~ msgid "Pinterest link"
+#~ msgstr "Pinterest link"
+
+#~ msgid "LinkedIn link"
+#~ msgstr "LinkedIn link"
+
+#~ msgctxt "reference"
+#~ msgid "References"
+#~ msgstr "Referanser"
+
+#~ msgctxt "reference"
+#~ msgid "Reference"
+#~ msgstr "Referanse"
+
+#~ msgctxt "reference"
+#~ msgid "Add reference"
+#~ msgstr "Legg til referanse"
+
+#~ msgctxt "reference"
+#~ msgid "Edit reference"
+#~ msgstr "Rediger referanse"
+
+#~ msgctxt "reference"
+#~ msgid "New reference"
+#~ msgstr "Ny referanse"
+
+#~ msgctxt "reference"
+#~ msgid "Show reference"
+#~ msgstr "Vis referanse"
+
+#~ msgctxt "reference"
+#~ msgid "Search for references"
+#~ msgstr "Søk etter referanse"
+
+#~ msgctxt "reference"
+#~ msgid "No references found"
+#~ msgstr "Ingen referanser funnet"
+
+#~ msgctxt "reference"
+#~ msgid "No references in the trash"
+#~ msgstr "Ingen referanse in søppelkurven"
+
+#~ msgctxt "reference"
+#~ msgid "Parent reference:"
+#~ msgstr "Forelderreferanse:"
+
+#~ msgctxt "service"
+#~ msgid "Services"
+#~ msgstr "Tjenester"
+
+#~ msgctxt "service"
+#~ msgid "Service"
+#~ msgstr "Tjeneste"
+
+#~ msgctxt "service"
+#~ msgid "Add"
+#~ msgstr "Legg til"
+
+#~ msgctxt "service"
+#~ msgid "Add service"
+#~ msgstr "Legg til tjeneste"
+
+#~ msgctxt "service"
+#~ msgid "Edit service"
+#~ msgstr "Rediger tjeneste"
+
+#~ msgctxt "service"
+#~ msgid "New service"
+#~ msgstr "Ny tjeneste"
+
+#~ msgctxt "service"
+#~ msgid "Show service"
+#~ msgstr "Vis tjeneste"
+
+#~ msgctxt "service"
+#~ msgid "Search for services"
+#~ msgstr "Søk etter tjenester"
+
+#~ msgctxt "service"
+#~ msgid "No services found"
+#~ msgstr "Ingen tjenester funnet"
+
+#~ msgctxt "service"
+#~ msgid "No services in the trash"
+#~ msgstr "Ingen tjenester i søppelkurven"
+
+#~ msgctxt "service"
+#~ msgid "Parent service:"
+#~ msgstr "Foreldertjeneste:"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Service categories"
+#~ msgstr "Tjenestekategorier"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Service category"
+#~ msgstr "Tjenestekategori"
+
+#~ msgid "Search for service categories"
+#~ msgstr "Søk i tjenestekategorier"
+
+#~ msgid "All service categories"
+#~ msgstr "Alle tjenestekategorier"
+
+#~ msgid "Parentcategory"
+#~ msgstr "Forelderkategori"
+
+#~ msgid "Parentcategory:"
+#~ msgstr "Forelderkategori"
+
+#~ msgid "Edit service category"
+#~ msgstr "Rediger tjenestekategori"
+
+#~ msgid "Update service category"
+#~ msgstr "Oppdater tjenestekategori"
+
+#~ msgid "Add service category"
+#~ msgstr "Legg til tjenestekategori"
+
+#~ msgid "New categoryname"
+#~ msgstr "Nytt kategorinavn"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Media categories"
+#~ msgstr "Mediakategorier"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Media category"
+#~ msgstr "Mediakategori"
+
+#~ msgid "Search for media categories"
+#~ msgstr "Søk i mediakategorier"
+
+#~ msgid "All media categories"
+#~ msgstr "Alle mediakategorier"
+
+#~ msgid "Edit media category"
+#~ msgstr "Rediger mediakategori"
+
+#~ msgid "Update media category"
+#~ msgstr "Oppdater mediakategori"
+
+#~ msgid "Add media category"
+#~ msgstr "Legg til mediakategori"
+
+#~ msgid ""
+#~ "Use the <a href=\"%1$s\">\"featured\" tag</a> to feature your posts. You "
+#~ "can change this to a tag of your choice; if no posts match the tag, <a "
+#~ "href=\"%2$s\">sticky posts</a> will be displayed instead."
+#~ msgstr ""
+#~ "Bruk et <a href=\"%1$s\">stikkord</a> for å fremheve innleggene dine. Du "
+#~ "kan endre dette stikkordet hvis du vil. Hvis ingen innlegg passer til "
+#~ "stikkordet, så vil <a href=\"%2$s\">klebrige innlegg</a> bli vist "
+#~ "istedenfor."
+
+#~ msgid "Tag Name"
+#~ msgstr "Stikkord Navn"
+
+#~ msgid "Don&rsquo;t display tag on front end."
+#~ msgstr "Ikke vis stikkordet på nettsiden."
+
+#~ msgid "&larr; Previous"
+#~ msgstr "&larr; Forrige"
+
+#~ msgid "Next &rarr;"
+#~ msgstr "Neste &rarr;"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Innlegg navigasjon"
+
+#~ msgid "Post navigation"
+#~ msgstr "Artikkel navigasjon"
+
+#~ msgid "%title"
+#~ msgstr "%title"
+
+#~ msgid "Sticky"
+#~ msgstr "Klebrig"
+
+#~ msgid "Page %s"
+#~ msgstr "Side %s"
+
+#~ msgid "Why not try to search for it:"
+#~ msgstr "Hvorfor ikke prøve et søk:"
+
+#~ msgid "Day: %s"
+#~ msgstr "Dag: %s"
+
+#~ msgid "Month: %s"
+#~ msgstr "Måned: %s"
+
+#~ msgctxt "monthly archives date format"
+#~ msgid "F Y"
+#~ msgstr "F Y"
+
+#~ msgid "Year: %s"
+#~ msgstr "År: %s"
+
+#~ msgctxt "yearly archives date format"
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Asides"
+#~ msgstr "Notis"
+
+#~ msgid "Galleries"
+#~ msgstr "Gallerier"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Videos"
+#~ msgstr "Videoer"
+
+#~ msgid "Quotes"
+#~ msgstr "Sitater"
+
+#~ msgid "Links"
+#~ msgstr "Linker"
+
+#~ msgid "Statuses"
+#~ msgstr "Statuser"
+
+#~ msgid "Audios"
+#~ msgstr "Lyd"
+
+#~ msgid "Chats"
+#~ msgstr "Samtaler"
+
+#~ msgid "Archives"
+#~ msgstr "Arkiver"
+
+#~ msgid "All posts by %s"
+#~ msgstr "Alle innlegg av %s"
+
+#~ msgid "Edit"
+#~ msgstr "Rediger"
+
+#~ msgid ""
+#~ "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark"
+#~ "\">permalink</a>."
+#~ msgstr ""
+#~ "Dette innlegget har følgende stikkord: %2$s. Bokmerk <a href=\"%3$s\" rel="
+#~ "\"bookmark\">permalenken</a>."
+
+#~ msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+#~ msgstr "Bokmerk <a href=\"%3$s\" rel=\"bookmark\">permalenken</a>."
+
+#~ msgid ""
+#~ "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel="
+#~ "\"bookmark\">permalink</a>."
+#~ msgstr ""
+#~ "Dette innlegget ble publisert i %1$s. Bokmerk <a href=\"%3$s\" rel="
+#~ "\"bookmark\">permalenken</a>."
+
+#~ msgid "Right Sidebar"
+#~ msgstr "Høyre Sidestolpe"
+
+#~ msgid "Left Sidebar"
+#~ msgstr "Venstre Sidestolpe"
+
+#~ msgid "Sidebar that appears on the left"
+#~ msgstr "Sidestolpe som vises på venstre side"
+
+#~ msgid "Homepage"
+#~ msgstr "Forsiden"
+
+#~ msgid "Widgets that only show up on the homepage."
+#~ msgstr "Widgeter som kun vises på forsiden."
+
+#~ msgid "Footer Sidebar 1"
+#~ msgstr "Footer Sidestolpe 1"
+
+#~ msgid "Appears in the footer area."
+#~ msgstr "Vises i bunn."
+
+#~ msgid "Footer Sidebar 2"
+#~ msgstr "Footer Sidestolpe 2"
+
+#~ msgid "Footer Sidebar 3"
+#~ msgstr "Footer Sidestolpe 3"
+
+#~ msgid "Footer Sidebar 4"
+#~ msgstr "Footer Sidestolpe 4"
+
+#~ msgid "Theme Settings"
+#~ msgstr "Temainnstillinger"
+
+#~ msgid "Tweak your theme just the way you want it"
+#~ msgstr "Modifiser temaet akkurat slik du vil ha det"
+
+#~ msgid "Help"
+#~ msgstr "Hjelp"
+
+#~ msgid "Find answers to your questions"
+#~ msgstr "Finn svar til dine spørsmål"
+
+#~ msgid "About Riiskit"
+#~ msgstr "Om Riiskit"
+
+#~ msgid "Need some help?"
+#~ msgstr "Trenger du hjelp?"
+
+#~ msgid "Say hello to Riiskit %s"
+#~ msgstr "Si hallo til Riiskit %s"
+
+#~ msgid ""
+#~ "You can start by reading the <a href=\"%2$s\">documentation</a> and if "
+#~ "you don't find your answer there, don't freak out! We get many support "
+#~ "tickets every day and the most common ones are listed <a href=\"%2$s\">on "
+#~ "this page</a>. We also have a <a href=\"%2$s\">support page</a> where you "
+#~ "can ask your question or see if others have beaten you to it!"
+#~ msgstr ""
+#~ "Du kan starte med å lese <a href=\"%2$s\">dokumentasjonen</a> og hvis du "
+#~ "ikke finner spørsmålet der er det ingen grunn til panikk! Vår "
+#~ "kundeservice får mange spørsmål daglig og de mest vanlige er listet <a "
+#~ "href=\"%2$s\">på denne siden</a>. Vi har også en <a href=\"%2$s"
+#~ "\">kundeservice side</a> hvor du kan selv stille spørsmål eller se om "
+#~ "andre allerede har gjort det!"
+
+#~ msgid "Read the documentation"
+#~ msgstr "Les dokumentasjonen"
+
+#~ msgid "Check the FAQ"
+#~ msgstr "Sjekk ut FAQ"
+
+#~ msgid "Tips & Tricks"
+#~ msgstr "Tips & Triks"
+
+#~ msgid "Hire Us"
+#~ msgstr "Ansett Oss"
+
+#~ msgid ""
+#~ "Thank you for using Riiskit! To get you started, you can <a href=\"%1$s"
+#~ "\">tweak it</a> to your needs or perhaps <a href=\"%2$s\">make some "
+#~ "pages</a>! If you have any questions, read the <a href=\"%3$s"
+#~ "\">documentation</a> and if you can't find your answer there, head over "
+#~ "to our <a href=\"%4$s\">support page</a>."
+#~ msgstr ""
+#~ "Takk for at du bruker Riiskit! For å få deg i gang, så kan du <a href="
+#~ "\"%1$s\">personifisere temaet</a> til dine behov eller kanskje <a href="
+#~ "\"%2$s\">opprette noen sider</a>! Hvis du har noen spørsmål, les <a href="
+#~ "\"%3$s\">dokumentasjonen</a> og hvis du ikke finner svaret ditt der, "
+#~ "klikk deg videre til vår<a href=\"%4$s\">kundeservice side</a>."
+
+#~ msgid ""
+#~ "You are using a child theme of Riiskit %1$s : always check the %2$s after "
+#~ "upgrading to see if a function or a template has been deprecated."
+#~ msgstr ""
+#~ "Du brukte et barne tema av Riiskit %1$s : sjekk alltid %2$s etter å ha "
+#~ "oppgradert for å se om en funksjon eller malfil har blitt utdatert."
+
+#~ msgid "Got a crush on Riiskit?"
+#~ msgstr "Småforelsket i Riiskit?"
+
+#~ msgid ""
+#~ "If my theme has left you with a smile on your face, then please give it a "
+#~ "nice review! <br />(It will help us help you&hellip;)"
+#~ msgstr ""
+#~ "Hvis mitt tema har etterlatt et smil på ditt fjes, vær vennlig å gi det "
+#~ "en fin tilbakemelding! <br />(Det vil hjelpe oss å hjelpe deg&hellip;)"
+
+#~ msgid "Follow us"
+#~ msgstr "Følg oss"
+
+#~ msgid "Improve your website and business"
+#~ msgstr "Optimaliser din nettside og business"
+
+#~ msgid "Step it up a notch by reading our articles."
+#~ msgstr "Øk nivået litt ved å lese våre artikler."
+
+#~ msgid ""
+#~ "Perhaps you're a web administrator or just a playful spirit who likes to "
+#~ "fiddle around with Wordpress? <br />Then you'll undoubtedly benefit from "
+#~ "our articles about how you can increase your site's performance, "
+#~ "security, content etc., often through using our favorite plugins!"
+#~ msgstr ""
+#~ "Kanskje du er en webadministrator eller bare en leken sjel som liker å "
+#~ "fikle med Wordpress? <br />Da vil du uten tvil få utbytte av våre "
+#~ "artikler om hvordan du kan forbedre nettsidens hastighet, sikkerhet, "
+#~ "innhold etc., som oftest ved å bruke våre favoritt innstikk."
+
+#~ msgid ""
+#~ "Maybe you're a business owner? Why not check out our articles about "
+#~ "business strategies, marketing etc.!"
+#~ msgstr ""
+#~ "Kanskje du er en bedriftseier? Hvorfor ikke sjekke ut våre artikler om "
+#~ "business strategier, markedsføring etc.!"
+
+#~ msgid ""
+#~ "As you probably see, there's pretty much something for everyone who wants "
+#~ "to improve."
+#~ msgstr ""
+#~ "Som du sikkert ser, så er det nærmest noe å lese for hvem som helst med "
+#~ "lysten til å lære."
+
+#~ msgid "Learn something new"
+#~ msgstr "Lær noe nytt"
+
+#~ msgid "Subscribe to our newsletter"
+#~ msgstr "Abonner på vårt nyhetsbrev"
+
+#~ msgid "Never miss an important message again."
+#~ msgstr "Aldri gå glipp av en viktig melding igjen."
+
+#~ msgid ""
+#~ "We promise to not spam you with emails every other day, and you can "
+#~ "choose what kind of news you want to receive. Maybe you just want the "
+#~ "coupons?"
+#~ msgstr ""
+#~ "Vi lover å ikke spamme deg med e-poster annenhver dag, og du kan velge "
+#~ "akkurat hva slags e-poster du har lyst til å motta. Kanskje du bare har "
+#~ "lyst på rabattkoder?"
+
+#~ msgid "Subscribe to our mailing list"
+#~ msgstr "Abonner på vårt nyhetsbrev"
+
+#~ msgid "email address"
+#~ msgstr "e-post adresse"
+
+#~ msgid "Subscribe"
+#~ msgstr "Abonner"
+
+#~ msgid "Changelog in version %1$s"
+#~ msgstr "Endringslogg i versjon %1$s"
+
+#~ msgid "Go to Dashboard &rarr; Home"
+#~ msgstr "Go to Kontrollpanel &rarr; Hjem"
+
+#~ msgid "Go to Dashboard"
+#~ msgstr "Gå til Kontrollpanel"
+
+#~ msgid "Background may only be visible on wide screens."
+#~ msgstr "Bakgrunn vil muligens kun være synlig på wide screens."
+
+#~ msgid "Content Link Color"
+#~ msgstr "Innhold Lenkefarger"
+
+#~ msgid "Content Text Color"
+#~ msgstr "Innhold Tekstfarger"
+
+#~ msgid "Wide Grey"
+#~ msgstr "Bred Grå"
+
+#~ msgid "Blurb"
+#~ msgstr "Blurb"
+
+#~ msgid "Image:"
+#~ msgstr "Bilde:"
+
+#~ msgid "Upload Image"
+#~ msgstr "Last opp Bilde"
+
+#~ msgid ""
+#~ "<strong>Rounded images</strong> (the image must have equal width and "
+#~ "height or it will be oval)"
+#~ msgstr ""
+#~ "<strong>Avrundede bilder</strong> (bildet må ha lik bredde og høyde "
+#~ "ellers blir det ovalt)"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "Title:"
+#~ msgstr "Tittel:"
+
+#~ msgid "Text:"
+#~ msgstr "Tekst:"
+
+#~ msgid "Button text:"
+#~ msgstr "Tekst til knapp:"
+
+#~ msgid "Notification Box"
+#~ msgstr "Notifikasjonsboks"
+
+#~ msgid "Pick a type/style"
+#~ msgstr "Velg en type/stil"
+
+#~ msgid "Search&hellip;"
+#~ msgstr "Søk&hellip;"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Tag Arkiver: %s"
+
+#~ msgid "Audio"
+#~ msgstr "Lyd"
+
+#~ msgid "RiisDesign"
+#~ msgstr "RiisDesign"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Hoved Meny"
+
+#~ msgid "type and hit enter"
+#~ msgstr "skriv og trykk enter"
+
+#~ msgid "Most Used Categories"
+#~ msgstr "Mest brukte kategorier"
+
+#~ msgid "Try looking in the monthly archives: %1$s"
+#~ msgstr "Prøv og se i de månedlige arkivene: %1$s"
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching, or one of the links below can help:"
+#~ msgstr ""
+#~ "Det ser ut til at vi ikke kan finne det du leter etter. Kanskje søking, "
+#~ "eller en av linkene nedenfor kan være til hjelp:"
+
+#~ msgid "Upgrade your browser today"
+#~ msgstr "Oppgrader din nettleser idag"
+
+#~ msgid "or"
+#~ msgstr "eller"
+
+#~ msgid "install Google Chrome Frame"
+#~ msgstr "installer Google Chrome Frame"
+
+#~ msgid "to better experience this site."
+#~ msgstr "for å få en bedre opplevelse av denne nettsiden."
+
+#~ msgid "Meta"
+#~ msgstr "Meta"
+
+#~ msgid "Daily Archives: <span>%s</span>"
+#~ msgstr "Daglige Arkiver: <span>%s</span>"
+
+#~ msgid "Monthly Archives: <span>%s</span>"
+#~ msgstr "Månedlige Arkiver: <span>%s</span>"
+
+#~ msgid "Yearly Archives: <span>%s</span>"
+#~ msgstr "Årlige Arkiver: <span>%s</span>"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Blogg Arkiv"
+
+#~ msgid "You must be"
+#~ msgstr "Du må være"
+
+#~ msgid "to post a comment."
+#~ msgstr "for å etterlate en kommentar."
+
+#~ msgid "You can use these tags"
+#~ msgstr "Du kan bruke disse kodene"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Din kommentar venter på moderasjon."
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s den %2$s"
+
+#~ msgid "(Edit)"
+#~ msgstr "Rediger"
+
+#~ msgid "Pingback:"
+#~ msgstr "Tilbakeping:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view any comments."
+#~ msgstr ""
+#~ "Denne artikkelen er passordbeskyttet. Skriv inn passordet for å se "
+#~ "kommentarene."
+
+#~ msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Eldre artikler"
+
+#~ msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Nyere artikler <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid ""
+#~ "Trackbacks are closed, but you can <a class=\"comment-link\" href="
+#~ "\"#respond\">post a comment</a>."
+#~ msgstr ""
+#~ "Tilbakesporinger er lukket, men du kan <a class=\"comment-link\" href="
+#~ "\"#respond\">etterlate en kommentar</a>."
+
+#~ msgid "Both comments and trackbacks are currently closed."
+#~ msgstr "Både kommentarer og tilbakesporinger er foreløpig lukket."
+
+#~ msgid ""
+#~ "Published <span class=\"entry-date\"><abbr class=\"published\">%2$s</"
+#~ "abbr></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s"
+#~ "\" rel=\"gallery\">%7$s</a>"
+#~ msgstr ""
+#~ "Publisert <span class=\"entry-date\"><abbr class=\"published\">%2$s</"
+#~ "abbr></span> <a href=\"%3$s\">%4$s &times; %5$s</a>i <a href=\"%6$s\" rel="
+#~ "\"gallery\">%7$s</a>"
+
+#~ msgid ""
+#~ "<a class=\"comment-link\" href=\"#respond\">Post a comment</a> or leave a "
+#~ "trackback: <a class=\"trackback-link\" href=\"%s\" rel=\"trackback"
+#~ "\">Trackback URL</a>."
+#~ msgstr ""
+#~ "<a class=\"comment-link\" href=\"#respond\">Kommenter</a> eller etterlat "
+#~ "en tilbakesporing: <a class=\"trackback-link\" href=\"%s\" rel=\"trackback"
+#~ "\">Tilbakesporing URL</a>."
+
+#~ msgid ""
+#~ "Comments are closed, but you can leave a trackback: <a class=\"trackback-"
+#~ "link\" href=\"%s\" rel=\"trackback\">Trackback URL</a>."
+#~ msgstr ""
+#~ "Kommentarer er stengt, men du kan etterlate en tilbakesporing: <a class="
+#~ "\"trackback-link\" href=\"%s\" rel=\"trackback\">Tilbakesporing URL</a>."
+
+#, fuzzy
+#~ msgid "Søk i tjenestekategorier"
+#~ msgstr "Jeg forstår konsekvensene."
+
+#~ msgid "Author Archives: <span class=\"vcard\">%s</span>"
+#~ msgstr "Forfatter Arkiver: <span class=\"vcard\">%s</span>"
+
+#~ msgid "logged in"
+#~ msgstr "innlogget"
+
+#~ msgid "Logged in as"
+#~ msgstr "Innlogget som"
+
+#~ msgid "Log out of this account"
+#~ msgstr "Logg ut fra denne brukerkontoen"
+
+#~ msgid "Log out"
+#~ msgstr "Logg ut"
+
+#~ msgid "E-mail (won't be published)"
+#~ msgstr "E-post (vil ikke bli publisert)"
+
+#~ msgid "Website"
+#~ msgstr "Nettside"
+
+#~ msgid "Send"
+#~ msgstr "Send"
+
+#~ msgid ""
+#~ "<span class=\"sep\">Posted on </span><a href=\"%1$s\" rel=\"bookmark"
+#~ "\"><time class=\"entry-date\" datetime=\"%2$s\" pubdate>%3$s</time></a> "
+#~ "<span class=\"sep\"> by </span> <span class=\"author vcard\"><a class="
+#~ "\"url fn n\" href=\"%4$s\" title=\"%5$s\">%6$s</a></span>"
+#~ msgstr ""
+#~ "<span class=\"sep\">Publisert </span><a href=\"%1$s\" rel=\"bookmark"
+#~ "\"><time class=\"entry-date\" datetime=\"%2$s\" pubdate>%3$s</time></a> "
+#~ "<span class=\"sep\"> av </span> <span class=\"author vcard\"><a class="
+#~ "\"url fn n\" href=\"%4$s\" title=\"%5$s\">%6$s</a></span>"
+
+#~ msgid ""
+#~ "<span class=\"sep\">Posted on </span><a href=\"%1$s\" rel=\"bookmark\">\n"
+#~ "\t\t\t<time class=\"entry-date\" datetime=\"%2$s\" pubdate>%3$s</time></"
+#~ "a> <span class=\"sep\"> by </span>\n"
+#~ "\t\t\t<span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" "
+#~ "title=\"%5$s\">%6$s</a></span>"
+#~ msgstr ""
+#~ "<span class=\"sep\">Publisert </span><a href=\"%1$s\" rel=\"bookmark\">\n"
+#~ "\t\t\t<time class=\"entry-date\" datetime=\"%2$s\" pubdate>%3$s</time></"
+#~ "a> <span class=\"sep\"> av </span>\n"
+#~ "\t\t\t<span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" "
+#~ "title=\"%5$s\">%6$s</a></span>"
+
+#~ msgid "Proudly powered by WordPress"
+#~ msgstr "Stolt drevet av WordPress"
+
+#~ msgid "City (streetnumber),  (zip-code) - Country"
+#~ msgstr "By (gatenummer),  (postnummer) - Land"
+
+#~ msgid "Phone: (number) | Fax: (number) | (e-mail address)"
+#~ msgstr "Telefon: (nummer) | Fax: (nummer) | (e-post adresse)"
+
+#~ msgid "An optional second sidebar area"
+#~ msgstr "En alternativ kolonnemeny"
+
+#~ msgid "An optional footer area"
+#~ msgstr "Et alternativt footer område"
+
+#~ msgid "An optional second footer area"
+#~ msgstr "Et alternativt footer område 2"
+
+#~ msgid "An optional forth footer area"
+#~ msgstr "Et alternativt footer område 4"
+
+#~ msgid "Forsiden"
+#~ msgstr "Forsiden"
+
+#~ msgid "Moduler som dukker opp på forsiden. Ikke legg til flere moduler her."
+#~ msgstr ""
+#~ "Moduler som dukker opp på forsiden. Ikke legg til flere moduler her."
+
+#~ msgid "Theme: %1$s by %2$s | "
+#~ msgstr "Tema: %1$s av %2$s | "
+
+#~ msgid "404 Error :("
+#~ msgstr "404 Feil :("
+
+#~ msgid "%s <span class=\"says\">says:</span>"
+#~ msgstr "Nyere artikler <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid ""
+#~ "<span class=\"sep\">Posted on </span><time class=\"entry-date\" datetime="
+#~ "\"%2$s\" pubdate>%3$s</time>"
+#~ msgstr ""
+#~ "<span class=\"sep\">Publisert </span><time class=\"entry-date\" datetime="
+#~ "\"%2$s\" pubdate>%3$s</time>"
+
+#~ msgid "IT/Design blog"
+#~ msgstr "IT/Design bloggen"
+
+#~ msgid "RSS icon"
+#~ msgstr "RSS ikon"
+
+#~ msgid ""
+#~ "<h2>RiisDesign offers high quality web and logo design!</h2>\r\n"
+#~ "\t<h6>Cheap prices, high quality, and intensive work are just some of the "
+#~ "many qualities of RiisDesign."
+#~ msgstr ""
+#~ "<h2>RiisDesign tilbyr web og logo design!</h2>\r\n"
+#~ "\t<h6>Billige priser, høy kvalitet, og intenst arbeid er bare noen av "
+#~ "kvalitetene til RiisDesign."
+
+#~ msgid "Just send me a mail right now."
+#~ msgstr "Hvorfor ikke sende en mail umiddelbart?"
+
+#~ msgid "See portfolio!</a>"
+#~ msgstr "Se portefølje!</a>"
+
+#~ msgid "<strong>Previous project: </strong> "
+#~ msgstr "<strong>Forrige prosjekt: </strong> "
+
+#~ msgid "<strong>Next project: </strong>"
+#~ msgstr "<strong>Neste prosjekt: </strong> "
+
+#~ msgid ""
+#~ "<h2>You're currently looking at RiisDesign's portfolio!</h2><h6>I'll also "
+#~ "offer web and logo design soon. Not what you're looking for?\n"
+#~ "\tWhy not check out RiisDesign's"
+#~ msgstr ""
+#~ "<h2>Du befinner deg nå på RiisDesign sin porteføljeside!</h2><h6>Snart "
+#~ "vil det også tilbys web og logo design her. Er ikke dette noe for deg?\n"
+#~ "\tSjekk ut"
+
+#~ msgid "IT/Design blog </a> then?</h6>"
+#~ msgstr "IT/Design bloggen </a> til RiisDesign istedenfor da vel.</h6>"

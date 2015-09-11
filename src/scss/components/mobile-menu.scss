@@ -1,0 +1,126 @@
+
+@import "../../scss/utilities/index";
+
+
+
+
+
+/*btn*/.toggle-menu-btn {
+	display: none;
+}
+
+	.toggle-menu-btn__title { @include screenreader; }
+
+
+
+
+
+@include bp(mobile-menu) {
+
+	/*------------------------------------*\
+    #MOBILE MENU
+	\*------------------------------------*/
+
+
+	/*body*/.mobile-menu {
+
+		/*a*/.logo { margin-left: 5%; }
+
+
+		/*nav*/.site-header__nav {
+			float: none;
+			width: 100%; height: auto;
+
+			li { margin-left: 0; }
+		}
+
+			/*button*/.toggle-menu-btn {
+				position: relative;
+				display: block;
+				float: right;
+				width: 33px; height: $header-height;
+				margin-right: 5%; padding: 0;
+				border: 0;
+				outline: 0;
+				background-color: transparent;
+			}
+
+				.toggle-menu-btn__icon {
+					position: absolute;
+					top: 50%; bottom: 50%; left: 0;
+					margin: auto;
+				}
+
+				/*img*/.toggle-menu-btn__img { display: none; }
+
+				.toggle-menu-btn__title { margin-top: -4px; font-size: 14px; }
+
+
+			/*ul*/.menu-primary {
+				display: none;
+				z-index: 100;
+				line-height: 1.47;
+			}
+			/*ul*/.menu-primary.active { display: block; }
+	}
+
+
+	/*body*/.no-svg {
+		/*svg*/.toggle-menu-btn__svg { display: none; }
+		/*img*/.toggle-menu-btn__img { display: block; }
+	}
+
+
+	/*body*/.no-js {
+	    /*button*/.toggle-menu-btn {
+		    display: none;
+		}
+
+
+		/*ul*/.menu-primary {
+			display: block;
+		}
+	}
+
+
+
+
+
+	/*------------------------------------*\
+    #TOGGLE
+	\*------------------------------------*/
+
+
+	/*body*/.mobile-menu-type__toggle {
+
+		/*nav*/.site-header__nav {
+			text-align: center;
+
+			/*li*/.current_page_item a,
+			/*li*/.current-menu-item a {
+				background-color: #eee;
+			}
+		}
+
+			/*ul*/.menu-primary {
+				position: relative;
+				width: 100%;
+				@include rk-nav--stacked;
+
+				a {
+					width: 100%;
+					margin: 0; padding: 20px;
+					border-top: 1px solid #EAEAEA;
+					text-align: center;
+					text-decoration: none;
+					background-color: #fff;
+
+					&:hover, &:focus {
+						text-decoration: none;
+						background-color: #eee;
+					}
+				}
+			}
+	}
+
+}

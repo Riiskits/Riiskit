@@ -1,0 +1,116 @@
+/*btn*/
+.toggle-menu-btn {
+  display: none; }
+
+.toggle-menu-btn__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0; }
+  .toggle-menu-btn__title .focusable:active, .toggle-menu-btn__title .focusable:focus {
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible; }
+
+@media screen and (max-width: 649px) {
+  /*------------------------------------*    #MOBILE MENU
+	\*------------------------------------*/
+  /*body*/
+  .mobile-menu {
+    /*a*/
+    /*nav*/
+    /*button*/
+    /*img*/
+    /*ul*/
+    /*ul*/ }
+    .mobile-menu .logo {
+      margin-left: 5%; }
+    .mobile-menu .site-header__nav {
+      float: none;
+      width: 100%;
+      height: auto; }
+      .mobile-menu .site-header__nav li {
+        margin-left: 0; }
+    .mobile-menu .toggle-menu-btn {
+      position: relative;
+      display: block;
+      float: right;
+      width: 33px;
+      height: 150px;
+      margin-right: 5%;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      background-color: transparent; }
+    .mobile-menu .toggle-menu-btn__icon {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: 0;
+      margin: auto; }
+    .mobile-menu .toggle-menu-btn__img {
+      display: none; }
+    .mobile-menu .toggle-menu-btn__title {
+      margin-top: -4px;
+      font-size: 14px; }
+    .mobile-menu .menu-primary {
+      display: none;
+      z-index: 100;
+      line-height: 1.47; }
+    .mobile-menu .menu-primary.active {
+      display: block; }
+  /*body*/
+  .no-svg {
+    /*svg*/
+    /*img*/ }
+    .no-svg .toggle-menu-btn__svg {
+      display: none; }
+    .no-svg .toggle-menu-btn__img {
+      display: block; }
+  /*body*/
+  .no-js {
+    /*button*/
+    /*ul*/ }
+    .no-js .toggle-menu-btn {
+      display: none; }
+    .no-js .menu-primary {
+      display: block; }
+  /*------------------------------------*    #TOGGLE
+	\*------------------------------------*/
+  /*body*/
+  .mobile-menu-type__toggle {
+    /*nav*/
+    /*ul*/ }
+    .mobile-menu-type__toggle .site-header__nav {
+      text-align: center;
+      /*li*/ }
+      .mobile-menu-type__toggle .site-header__nav .current_page_item a,
+      .mobile-menu-type__toggle .site-header__nav .current-menu-item a {
+        background-color: #eee; }
+    .mobile-menu-type__toggle .menu-primary {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .mobile-menu-type__toggle .menu-primary > li {
+        display: list-item; }
+      .mobile-menu-type__toggle .menu-primary > li > a {
+        display: block; }
+      .mobile-menu-type__toggle .menu-primary a {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        border-top: 1px solid #EAEAEA;
+        text-align: center;
+        text-decoration: none;
+        background-color: #fff; }
+        .mobile-menu-type__toggle .menu-primary a:hover, .mobile-menu-type__toggle .menu-primary a:focus {
+          text-decoration: none;
+          background-color: #eee; } }
