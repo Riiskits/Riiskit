@@ -18,5 +18,5 @@ You need to have installed both _npm_ and _gulp_ to install Riiskit. After that,
 * IE8+
 * Vanilla, semantic, accessible, neatly organized and well documented code.
 
-## Documentation
-Coming soon...
+## Coming very soon
+Riiskit Child: A child theme for Riiskit.
