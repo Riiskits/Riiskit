@@ -10,7 +10,6 @@ var uglify      = require('gulp-uglify');
 var changed     = require('gulp-changed');
 var browserSync = require('browser-sync').create();
 var plumber     = require('gulp-plumber');
-var scsslint    = require('gulp-scss-lint');
 var jshint      = require('gulp-jshint');
 var stylish     = require('jshint-stylish');
 var imagemin    = require('gulp-imagemin');
@@ -34,10 +33,7 @@ var paths = {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        host: 'localhost/',
-        proxy: '127.0.0.1:8888/',
-        port: 8888,
-        open: true,
+        proxy: '127.0.0.1'
     });
 });
 
@@ -99,17 +95,17 @@ gulp.task('jslint', function() {
         .on('error', notify.onError({ message: 'JS hint fail'}));
 });
 
-gulp.task('scsslint', function() {
-    gulp.src(paths.scss)
-        .pipe(scsslint());
+gulp.task('watch', function() {
+    gulp.watch(paths.js, ['js', 'jslint']);
+    gulp.watch(paths.scss, ['styles']);
+    gulp.watch(paths.img, ['images']);
 });
 
-gulp.task('watch', function() {
-    gulp.watch('./').on('change', browserSync.reload);
-
+gulp.task('watch-autorefresh', function() {
     gulp.watch(paths.js, ['js', 'jslint', 'browser-sync']);
     gulp.watch(paths.scss, ['styles', 'browser-sync']);
     gulp.watch(paths.img, ['images', 'browser-sync']);
 });
 
-gulp.task('default', ['watch', 'browser-sync']);
+gulp.task('default', ['watch']);
+gulp.task('autorefresh', ['watch-autorefresh']);
