@@ -68,6 +68,12 @@
 .hidden, .hide {
   display: none !important; }
 
+.block, .show {
+  display: block !important; }
+
+.inline-block {
+  display: inline-block !important; }
+
 .visuallyhidden,
 .screenreader,
 .screen-reader-text {
@@ -108,12 +114,6 @@
 .fade-out {
   height: 0;
   opacity: 0; }
-
-.block, .show {
-  display: block !important; }
-
-.inline-block {
-  display: inline-block !important; }
 
 /***** Start: positioning *****/
 .center {
