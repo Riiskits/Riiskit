@@ -97,6 +97,13 @@
 	display: none !important;
 }
 
+@mixin show {
+	display: block !important;
+}
+@mixin inline-block {
+	display: inline-block !important;
+}
+
 @mixin screenreader {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -133,14 +140,6 @@
 @mixin fade-out {
 	height: 0;
 	opacity: 0;
-}
-
-
-@mixin show {
-	display: block !important;
-}
-@mixin inline-block {
-	display: inline-block !important;
 }
 
 
