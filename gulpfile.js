@@ -2,6 +2,7 @@
 // Author: halvard@mekom.no
 
 var gulp        = require('gulp');
+var babel       = require('gulp-babel');
 var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
 var cssmin      = require('gulp-minify-css');
@@ -10,11 +11,18 @@ var uglify      = require('gulp-uglify');
 var changed     = require('gulp-changed');
 var browserSync = require('browser-sync').create();
 var plumber     = require('gulp-plumber');
-var jshint      = require('gulp-jshint');
+var eslint      = require('gulp-eslint');
 var stylish     = require('jshint-stylish');
 var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
 var notify      = require('gulp-notify');
+var notifier    = require('node-notifier');
+
+var readyNotifier = {
+    title: 'Gulp',
+    message: 'Ready to rumble!',
+    time: 2000
+};
 
 var paths = {
     //source paths
@@ -31,12 +39,6 @@ var paths = {
     imgDst: 'dist/img/'
 };
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        proxy: '127.0.0.1'
-    });
-});
-
 gulp.task('styles', function() {
     return gulp.src(paths.scss)
         .pipe(sass({
@@ -52,7 +54,7 @@ gulp.task('styles', function() {
             suffix: '.min'
         }))
         .pipe(gulp.dest(paths.cssDst + 'min/'))
-        .pipe(notify('Generated CSS file: <%= file.relative %>'))
+        .pipe(notify('Generated CSS: <%= file.relative %>'))
         .pipe(browserSync.stream());
 });
 
@@ -61,6 +63,7 @@ gulp.task('js', function() {
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
+        .pipe(babel())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.jsDst))
         .pipe(uglify())
@@ -68,7 +71,7 @@ gulp.task('js', function() {
           suffix: '.min'
         }))
         .pipe(gulp.dest(paths.jsDst + 'min/'))
-        .pipe(notify('Generated JS file: <%= file.relative %>'))
+        .pipe(notify('Generated JS: <%= file.relative %>'))
         .pipe(browserSync.stream());
 });
 
@@ -89,23 +92,35 @@ gulp.task('images', function() {
 
 gulp.task('jslint', function() {
     gulp.src(paths.js)
-        .pipe(jshint())
-        .pipe(jshint.reporter(stylish))
-        .pipe(jshint.reporter('fail'))
-        .on('error', notify.onError({ message: 'JS hint fail'}));
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .on('error', notify.onError({ message: 'eslint failed.' }));
 });
 
+// Default
 gulp.task('watch', function() {
-    gulp.watch(paths.js, ['js', 'jslint']);
+    gulp.watch(paths.js, ['js']);
     gulp.watch(paths.scss, ['styles']);
     gulp.watch(paths.img, ['images']);
 });
+gulp.task('default', ['watch'], function(){
+    notifier.notify(readyNotifier);
+});
 
+// Autorefresh
 gulp.task('watch-autorefresh', function() {
     gulp.watch(paths.js, ['js', 'jslint', 'browser-sync']);
     gulp.watch(paths.scss, ['styles', 'browser-sync']);
     gulp.watch(paths.img, ['images', 'browser-sync']);
-});
 
-gulp.task('default', ['watch']);
-gulp.task('autorefresh', ['watch-autorefresh']);
+    gulp.watch("./").on('change', browserSync.reload);
+
+    notifier.notify(readyNotifier);
+});
+gulp.task('autorefresh', ['watch-autorefresh'], function(){
+    gulp.task('browser-sync', function() {
+        browserSync.init({
+            proxy: '127.0.0.1'
+        });
+    });
+});
