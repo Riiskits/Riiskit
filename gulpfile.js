@@ -19,8 +19,8 @@ var notify      = require('gulp-notify');
 var paths = {
     //source paths
     scss: [
-        'src/scss/base/normalize.scss',
-        'src/scss/utilities/helper-classes.scss',
+        'src/scss/**/normalize.scss',
+        'src/scss/**/helper-classes.scss',
         'src/scss/**/*.scss'
     ],
     js: 'src/js/**/*.js',
