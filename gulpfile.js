@@ -66,11 +66,6 @@ gulp.task('js', function() {
         .pipe(babel())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.jsDst))
-        .pipe(uglify())
-        .pipe(rename({
-          suffix: '.min'
-        }))
-        .pipe(gulp.dest(paths.jsDst + 'min/'))
         .pipe(notify('Generated JS: <%= file.relative %>'))
         .pipe(browserSync.stream());
 });
