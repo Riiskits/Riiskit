@@ -1,6 +1,7 @@
 
+# Project files #
+######################
 node_modules
-LICENCE.MD
 *.sketch
 *.log
 *.map
