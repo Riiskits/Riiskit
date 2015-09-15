@@ -110,6 +110,7 @@ gulp.task('default', ['js', 'styles', 'images'], function(){
 
 // Autorefresh
 gulp.task('autorefresh', function(){
+    //browsersync server
     gulp.task('browser-sync', function() {
         browserSync.init({
             proxy: '127.0.0.1'
@@ -123,7 +124,9 @@ gulp.task('autorefresh', function(){
     //distribution paths
     gulp.watch(paths.jsDst, ['jslint']);
 
+    // browsersync injection
     gulp.watch("./").on('change', browserSync.reload);
 
+    // gulp is ready
     notifier.notify(readyNotifier);
 });
