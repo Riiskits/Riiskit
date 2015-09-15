@@ -127,7 +127,7 @@ add_action( 'wp_enqueue_scripts', 'riiskit_stylesheets' );
  */
 function riiskit_scripts() {
 	// main.js
-	wp_enqueue_script( 'riiskit-main', get_template_directory_uri() . '/dist/js/min/main.min.js', array(), '1.0.2', true );
+	wp_enqueue_script( 'riiskit-main', get_template_directory_uri() . '/dist/js/main.js', array(), '1.0.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'riiskit_scripts' );
 
