@@ -94,6 +94,7 @@ gulp.task('jslint', function() {
 
 // Default
 gulp.task('watch', function() {
+    notifier.notify(readyNotifier);
     //source paths
     gulp.watch(paths.js, ['js']);
     gulp.watch(paths.scss, ['styles']);
@@ -101,12 +102,20 @@ gulp.task('watch', function() {
     //distribution paths
     gulp.watch(paths.jsDst, ['jslint']);
 });
-gulp.task('default', ['watch'], function(){
+gulp.task('default', ['js', 'styles', 'images'], function(){
     notifier.notify(readyNotifier);
+    //distribution paths
+    gulp.watch(paths.jsDst, ['jslint']);
 });
 
 // Autorefresh
-gulp.task('watch-autorefresh', function() {
+gulp.task('autorefresh', function(){
+    gulp.task('browser-sync', function() {
+        browserSync.init({
+            proxy: '127.0.0.1'
+        });
+    });
+
     //source paths
     gulp.watch(paths.js, ['js', 'jslint', 'browser-sync']);
     gulp.watch(paths.scss, ['styles', 'browser-sync']);
@@ -115,13 +124,6 @@ gulp.task('watch-autorefresh', function() {
     gulp.watch(paths.jsDst, ['jslint']);
 
     gulp.watch("./").on('change', browserSync.reload);
-});
-gulp.task('autorefresh', ['watch-autorefresh'], function(){
-    gulp.task('browser-sync', function() {
-        browserSync.init({
-            proxy: '127.0.0.1'
-        });
-    });
 
     notifier.notify(readyNotifier);
 });
