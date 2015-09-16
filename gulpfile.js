@@ -87,6 +87,10 @@ gulp.task('jslint', function() {
         .on('error', notify.onError({ message: 'eslint failed.' }));
 });
 
+// Default
+gulp.task('default', ['js', 'styles', 'images'], function() {
+    notifier.notify(readyNotifier);
+});
 // Watch
 gulp.task('watch', function() {
     notifier.notify(readyNotifier);
@@ -97,11 +101,7 @@ gulp.task('watch', function() {
     //distribution paths
     gulp.watch(paths.jsDst, ['jslint']);
 });
-// Default
-gulp.task('default', ['js', 'styles', 'images'], function() {
-    notifier.notify(readyNotifier);
-});
-//Browsersync server
+// Browsersync server
 gulp.task('browser-sync', function() {
     browserSync.init({
         proxy: '127.0.0.1'
@@ -109,7 +109,7 @@ gulp.task('browser-sync', function() {
 });
 // Autorefresh
 gulp.task('autorefresh', function() {
-    gulp.run('browser-sync')
+    gulp.run('browser-sync');
     //source paths
     gulp.watch(paths.js, ['js', 'jslint']);
     gulp.watch(paths.scss, ['styles']);
